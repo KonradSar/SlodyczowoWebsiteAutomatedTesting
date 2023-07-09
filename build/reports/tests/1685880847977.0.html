@@ -1,0 +1,1940 @@
+<html data-pwa="1" lang="pl" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><link rel="stylesheet" type="text/css" href="https://d3bo67muzbfgtl.cloudfront.net/externals/shared-new/7zt9ardz5nkk04t3bxyo.style.css"><link rel="stylesheet" type="text/css" href="https://d3bo67muzbfgtl.cloudfront.net/externals/custom/63ff5f7d74bbe/style.20230331-143004.css"><head data-features="WyJwcm9kdWN0X2J1bmRsZXMiLCJ3ZWJkYXYiLCJzYWFzX2JpbGxpbmciLCJyZWRpcmVjdHNfY29uZmlnIiwicmVkaXJlY3RzX2RvbWFpbnMiLCJyZWRpcmVjdHNfb2JqZWN0cyIsInJlZGlyZWN0c19yb3V0ZXIiLCJyZWRpcmVjdHNfYXBpIiwiYWxsZWdyb19kb3dubG9hZF9vcmRlcnMiLCJhbGxlZ3JvX2ltcG9ydF9hdWN0aW9ucyIsImFsbGVncm9fdXBkYXRlX2F1Y3Rpb25zIiwic2VhcmNoX2FkbWluIiwic2VhcmNoX2NsaWVudCIsInB3YSIsImFsbGVncm9fc2VuZF9zaGlwcGluZ19udW1iZXIiLCJzZW9fZ2Z4Iiwic2hvd19wcmVtaXVtX2ZlYXR1cmVzIiwicmVjb21tZW5kYXRpb25zX3RyYWNraW5nIiwiYmVsbF9tZXNzYWdlcyIsInBheW1lbnRfZ3BheSIsInNlYXJjaF9pbmRleGVyIiwibmJwX2N1cnJlbmNpZXMiLCJhbGxlZ3JvX2Rvd25sb2FkX29yZGVyc19zdXJjaGFyZ2VzIiwiYWxsZWdyb19hdXRvX2ltcG9ydF9hdWN0aW9ucyIsImFsbGVncm9fb3JkZXJfYW5kX3RyYW5zYWN0aW9uX3VpZF9maWx0ZXJzIiwiYWxsZWdyb19kb3dubG9hZF9vcmRlcnNfYWRkaXRpb25hbF9zZXJ2aWNlcyIsInR3b19mYWN0b3Jfc21zIiwiaW5wb3N0X21hcCIsInBhY3prb21hdHlfZGlzYWJsZSIsInByb2R1Y3RfZHVwbGljYXRlX25ld19vcHRpb25zIiwiaW5wb3N0X3B3dyIsImZpbGVfbWFuYWdlbWVudCIsIndlYnB1c2hfYWRtaW4iLCJuZXdfcGFuZWxfbWVzc2FnZSIsImRlZmF1bHRfZmlsdGVyX3Byb2ZpbGVzIiwibmV3X29yZGVyc192aWV3IiwicmVjYXB0Y2hhX2FkbWluIiwic2lkZWJhcl90b2dnbGUiLCJ0d29fZmFjdG9yIiwidHJhZmZpY19hbmFseXplciIsIm5ld19wYXJjZWxfY3JlYXRlIiwidHJhZmZpY19uZXdfcmVwb3J0cyIsInBlcmZvcm1hbmNlX3JlcG9ydHMiLCJhdXJvcmFfcmVmYWN0b3JpbmciLCJub19tb2JpbGVfc2tpbl9sb2dpYyIsInBheW1lbnRfcGF5cG8iLCJhbGxlZ3JvX3VwZGF0ZV9xdWFudGl0eV9tdWx0aWFjdGlvbiIsImFsbGVncm9fdXBkYXRlX3ByaWNlX211bHRpYWN0aW9uIiwiYWxsZWdyb19zdGF0dXNfbWFwIiwiZ3R1X2NvZGUiLCJ2YXRfZXUiLCJuZXdfYWxsZWdyb190ZW1wbGF0ZV9jcmVhdG9yIiwiYWxsZWdyb19hc3NpZ25fdGF4X3ZhbHVlX211bHRpYWN0aW9uIiwiYWxsZWdyb19hdWN0aW9uc190YXhfdmFsdWVfZmlsdGVycyIsImFsbGVncm9fY3JlYXRvcl90YXhfc2VsZWN0aW9uX2xpc3QiLCJhbGxlZ3JvX2RldGVjdF9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2Fzc2lnbl9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2F1Y3Rpb25zX2hhc19hbGxlZ3JvX3Byb2R1Y3RfZmlsdGVycyIsImFsbGVncm9fcHJvZHVjdHNfaGFzX2FsbGVncm9fcHJvZHVjdF9maWx0ZXJzIiwiY2xlYW5fdXBfbWFpbF9sb2dzIiwibmV3X29yZGVyX25vdGVzIiwibmV3X2dhbGxlcnkiLCJyZWNvbW1lbmRhdGlvbnNfc3RhdHNfYW5hbHl6ZXIiLCJvYmplY3RzX3N0YXRzX2FuYWx5emVyIiwicmVjb21tZW5kYXRpb25zX21vZGVsX2ZpdCIsInJlY29tbWVuZGF0aW9uc19hZG1pbiIsImN1c3RvbWVyX3ByaXZhY3kiLCJpbWdfc2l6ZV9lZGl0YWJsZSIsImRpZ2l0YWxfbGlua3MiLCJjb2xsZWN0aW9ucyIsImdmeF9tZXRhZGF0YSIsInByb2dyZXNzaXZlX2Rpc2NvdW50cyIsImdvb2dsZV9hbmFseXRpY3NfdjQiLCJmYWNlYm9va19idXNpbmVzc19leHRlbnNpb24iLCJmYWNlYm9va19jYXBpIiwic3RvY2swX3N5bmMiLCJzdG9jazAiLCJyZWNvbW1lbmRhdGlvbnNfY29tcHV0ZV9zdW1zX29wdGltaXphdGlvbiIsInJlY29tbWVuZGF0aW9uc19zdW1zX29wdGltaXphdGlvbiIsInNlc3Npb25fc3RhcnRzX2luX3JlYWRfb25seV9tb2RlIiwiZGlzYWJsZV9jbGllbnRfc2Vzc2lvbl91YV9yZXZhbGlkYXRlIiwid2FyZWhvdXNlc19sb2dzIiwid2FyZWhvdXNlcyIsInByb2R1Y3RfZHVwbGljYXRlX2NvbGxlY3Rpb25zIiwicmVzdGFwaV93aXRob3V0X2xvY2tzIiwiY29uZGl0aW9uX29uX3Byb21vY29kZXNsaXN0IiwicGhvbmVfdmFsaWRhdGlvbiIsInVybF9yZXBhaXJfc3RyaW5nX2Rpc2FibGUiLCJwcm9kdWN0c19vcmRlciIsImFsbGVncm9fZXJwYm94Iiwic3RvY2tfb3B0aW1pemF0aW9uIiwibWFpbl9wYWdlX2NvbGxlY3Rpb24iLCJyZWJyYW5kaW5nX2FwaWxvIiwibW9kYWxfaW1wcm92ZW1lbnQiLCJzaG9wZXJfc2hpcG1lbnRzIiwicHJvbW90aW9uc19wcm9kdWN0c19tYW51YWxfb3JkZXIiLCJjYW1wYWdpbnNfdGlrdG9rIiwibmV3X3Byb2R1Y3RzX21hbnVhbF9vcmRlciIsImZyb250c2tpbl9jb25maWd1cmF0b3JfbmV3X2NvbnRyb2xzIiwiZnJvbnRza2luX2NvbmZpZ3VyYXRvciIsInBheW1lbnRfYXBwbGVfcGF5IiwiYnlfZGF0ZV9hZGRfc29ydF90eXBlcyIsImZlYXR1cmVfZmxhZ3NfYWNrIiwiYWxsZWdyb19sb2NrX3Byb2Nlc3MiLCJhbGxlZ3JvX3Byb2R1Y3RpemF0aW9uIiwiYWxsZWdyb19wcm9ncmVzc192YWxpZGF0aW9uX2Vycm9yIiwiY29udHJvbF9jYXRlZ29yeV9yZWZhY3RvciIsImFsbGVncm9fcHJvbW9fb3B0aW9ucyIsInByb2R1Y3RfY2FyZF9hZGRpdGlvbmFsX3dhcmVob3VzZXNfc2hpcHBpbmdfdGltZSIsImNsaWVudF9maWx0ZXJfY2xlYW5fYXNjaWkiLCJiYXNrZXRfYWRkcmVzc19wbHVnaW5zIiwicG9jenRhX3BvbHNrYV9pbnN1cmFuY2UiLCJvbW5pYnVzX2JhY2tlbmQiLCJzaG9wZXJfY2FtcGFpZ25zX29yZGVyX2VtYWlsIiwiY3JlYXRlX21haWxfbWVzc2FnZV9pZCIsInBheW1lbnRfZmluYW5jaW5nX2JydXR0byIsInNoaXBtZW50X2NyZWF0ZV9pbnZlcnRfYWxsZWdybyIsInNoaXBtZW50X2NyZWF0ZV9pbnZlcnRfYXBhY3prYSIsInNoaXBtZW50X2NyZWF0ZV9pbnZlcnRfaW5wb3N0Iiwic2hpcG1lbnRfY3JlYXRlX2ludmVydF9wYWN6a29tYXR5IiwicGFsbGV0X3BhY2thZ2UiLCJzcF9pbnBvc3RfcG9pbnRfdG9fZG9vciIsInBhcmNlbHNfY3JlYXRlX29yZGVyX2lkX25vdGVzIiwiZ3BheV9jbGVhbl9waG9uZV9udW1iZXIiLCJkaXNhYmxlX3ByaWNlX2ZpbHRlcl9yYW5nZXMiLCJvcHRpbWl6ZWRfcGxhY2Vfb3JkZXJfdHJhbnNhY3Rpb24iLCJjb3VudF9wcm9kdWN0c19pbl9vcHRpb25fdmFsdWVzX2ZpbHRlcl9hdF9vbmNlIiwiY2FtcGFnaW5zX3dwYWRzIiwib21uaWJ1c19mcm9udGVuZCIsImFwcHN0b3JlX2FwaWxvX211bHRpX2NoYW5uZWwiLCJzaGlwbWVudF9jcmVhdGVfaW52ZXJ0X3Nob3BlcnNoaXBtZW50Iiwib21uaWJ1c19iYWNrZW5kX3YyIiwiYXBwc3RvcmVfYm94bWFya2V0IiwicGFyY2Vsc19wcmludF9kb2N1bWVudHNfbmV3X2ZpbGVuYW1lIiwiZ3RhZ19lbWl0X2V2ZW50IiwicmVjb3JkYV9hbm5veWluZ19tb2RhbCIsInBheW1lbnRfbmV3X2Zvcm1fYmFja2VuZCIsInNpdGVtYXBfYWRkaXRpb25hbF9vcHRpb25zIiwiYXBwc3RvcmVfcmV0dXJucyIsInBheW1lbnRfYm1fcGhvdG9fdmVyaWZpY2F0aW9uIiwiY2FjaGVfdGFnc19vcHRpbWl6ZXIiLCJwYXlfcGFsX2V4cHJlc3NfY2hlY2tvdXRfcmVwYWlyIiwib25saW5lcGF5bWVudF9kaXNhYmxlX2FjY291bnRfbnVtYmVyX3R5cGUiLCJwYXltZW50X3JlZnVuZF9wcm9jZXNzX2pvYiIsInBheW1lbnRfbmV3X3NlcnZpY2VfZXhpc3RzIiwiaW1wb3J0X2dmeF9mcm9tX3VybF9tb3ZlX291dF9vZl90cmFuc2FjdGlvbiIsImNhbXBhZ2luc19tc2FkcyIsInJlcGVhdGluZ19wYXlwb190cmFuc2FjdGlvbnMiLCJyZXZlcnNlX3BheW1lbnRfbmFtZV9kaXNwbGF5Iiwic3RvY2tfZnJvbnRfY2FjaGVfa2V5IiwiYXBwc3RvcmVfYXBpbG8iLCJ1cGRhdGVfZ2F0ZXdheV9pZCIsIm9ubGluZXBheW1lbnRfcGhvbmVfdmFsaWQiLCJuZXdfY29sbGVjdGlvbl9sYXlvdXQiLCJzaG9wZXJfY2FtcGFpZ25zX25ld19kYXRhX3NvdXJjZSIsInNob3Blcl9jYW1wYWlnbnNfcmVwb3J0cyIsImFwcHN0b3JlX3Nob3Blcl9jb25uZWN0IiwiZm1jX3N0YXJ0aW5nX2NvdW50ZXJfdmFsdWUiLCJyb3V0ZXJfdXJsX2FkZF9xdWVyeV9wYXJhbXMiLCJsb3lhbHR5X21haWxfcGVyX3VzZXIiLCJwYXltZW50X25vbl9hY2NvdW50ZWRfYWN0aXZpdHlfc2V0dGluZ3MiLCJmbWNfbG9jYWxfY291bnRlciIsIm9ubGluZXBheW1lbnRfcmVmdW5kc19kYl90cmFuc2FjdGlvbiIsInBheW1lbnRfZmluYW5jaW5nX25ld19kZXNjcmlwdGlvbiJd" data-ajaxbasket-mode="2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Słodyczowo - Słodycze z całego świata!</title>
+    <meta name="keywords" content="Słodycze z USA, słodycze z Japonii, zagraniczne słodycze, słodycze z zagranicy sklep online. Przekąski, chipsy, żelki, napoje z zagranicy. gdzie kupić zagraniczne słodycze sklep, slodycze, słodyczowy sklep online">
+    <meta name="description" content="Słodyczowo - Słodycze z całego świata! Znajdziesz u nas najlepsze zagraniczne słodycze, amerykańskie płatki śniadaniowe, przekąski, chipsy, mac cheese, napoje i wiele więcej! Sklep z zagranicznymi słodyczami i produktami spożywczymi z całego świata. Sklep ze słodyczami z całego świata, słodycze, przekąski i chipsy sklep internetowy. Słodycze z Ameryki, Słodycze z Japonii, słodycze i przekąski z Azji sklep online. Słodycze, których nie kupisz w Polsce, zagraniczne jedzenie sklep online. Sklep z zagranicznymi produktami Warszawa, Kraków, Poznań, Katowice, Kraków, Gdańsk, Lublin, Wrocław. Słodycze z zagranicy sklep internetowy, zagraniczne słodycze, słodycze z zagranicy, sklep ze słodyczami online, słodycze z zagranicy, sklep słodycze, słodycze z całego świata sklep internetowy, slodycze sklep online, słodyczowy sklep online, gdzie kupić słodycze z zagranicy sklep internetowy. Popularne marki zagraniczne słodycze sklep online. Jedzenie z zagranicy, sklep ze słodyczami online, zagraniczne słodycze online">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <link rel="home" href="/">
+    <link rel="shortcut icon" href="/skins/user/rwd_shoper_33/images/favicon.png">
+        
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="preload" as="font" type="font/woff" href="/skins/user/rwd_shoper_33/images/rwd-custom.woff?gptqpz" crossorigin="">
+    <link rel="preload" as="font" type="font/woff" href="/skins/user/rwd_shoper_33/images/fontawesome-webfont.woff?v=4.0.3" crossorigin="">
+
+    
+    
+    <link id="csslink" rel="stylesheet" type="text/css" href="/skins/user/rwd_shoper_33/cache/sfc/NTM6MTU1OjUuMjMuMTg.css">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/sNQO7xVld1CuA2hfFHvkpVL-/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-7mBB7Iy1pYfwOh+XHDdjP2a8Ey+4kGpuMxvFApHuoGj3ZH/++DWmv7OIHGAKxk1v"></script><script async="" onload="_edrone.fn_externals_loaded()" src="https://d3bo67muzbfgtl.cloudfront.net/externals/63ff5f7d74bbe.js"></script><script async="" src="https://d3bo67muzbfgtl.cloudfront.net/edrone_add_to_cart.js"></script><script async="" src="https://d3bo67muzbfgtl.cloudfront.net/edrone_subscription.js"></script><script async="" src="https://d3bo67muzbfgtl.cloudfront.net/edrone_search.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0ZFH7WRWCS&amp;l=dataLayer&amp;cx=c"></script><script id="g-recaptcha" src="//www.google.com/recaptcha/api.js?onload=recaptchaRender&amp;render=explicit" async="" defer=""></script><script id="gtag-jssdk" src="https://www.googletagmanager.com/gtag/js?id=G-0ZFH7WRWCS" async=""></script><script type="text/javascript" async="" src="https://d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-T68LWS&amp;l=shopLayer"></script><script type="text/javascript" async="" src="https://popupapp.webcoders.eu/Box/App/javascript/lc/33669a5ef542d10d47a784ae3428274c479d8590/locale/pl_PL/name/shop.js"></script><script type="text/javascript" async="" src="https://tags.webcoders.eu/Box/App/javascript/lc/33669a5ef542d10d47a784ae3428274c479d8590/locale/pl_PL/name/shop.js"></script><script src="https://connect.facebook.net/signals/config/1472219532984701?v=2.9.106&amp;r=stable" async=""></script><script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TLFBJRH"></script><script type="text/javascript" src="/assets/js/frontstore/main.8714707709a3a32ed7e8.min.js"></script><style type="text/css">@font-face {
+  font-family: 'aurora-icons';
+  font-display: swap;
+  src: url(https://dcsaascdn.net/fonts/aurora-icons.svg) format('svg'), url(https://dcsaascdn.net/fonts/aurora-icons.ttf) format('truetype'), url(https://dcsaascdn.net/fonts/aurora-icons.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.main-module_gallery__1Ajgx {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main-module_gallery__image__1LYNa {
+  margin: auto;
+  display: block;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+.main-module_gallery__image_max-width__2uWqp {
+  width: 100%;
+  height: auto;
+}
+.main-module_gallery__image_max-height__3iunQ {
+  height: 100%;
+  width: auto;
+}
+.main-module_gallery__image_adjusted__Ix20O {
+  max-width: 100%;
+  max-height: 100%;
+}
+.main-module_gallery__image_max-sizes__w2lwL {
+  height: auto;
+  width: auto;
+}
+.main-module_gallery__image-container__2uLDK {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.main-module_gallery__image-container__2uLDK::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.main-module_gallery__image-container__2uLDK::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.main-module_gallery__images__19e1P {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+}
+.main-module_gallery__images-container__y3z5v {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.main-module_gallery__images_with-transition__1cAJq {
+  transition: transform 0.3s cubic-bezier(0.25, 0.25, 0.75, 1) 0s;
+}
+.main-module_gallery-bar__2jTh6 {
+  height: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-max-content 1fr (-webkit-max-content)[2];
+  -ms-grid-columns: max-content 1fr (max-content)[2];
+  grid-template-columns: -webkit-max-content 1fr repeat(2, -webkit-max-content);
+  grid-template-columns: max-content 1fr repeat(2, max-content);
+          grid-template-areas: 'imageNumbers description copyLink close';
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  background-color: #242424;
+  color: #ffffff;
+  padding: 0 20px;
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+}
+.main-module_gallery-bar__2jTh6 .main-module_icon__2BB-1 {
+  font-size: 16px;
+}
+.main-module_gallery-bar__2jTh6 .main-module_icon__2BB-1:hover {
+  cursor: pointer;
+}
+.main-module_gallery-bar__2jTh6 .main-module_icon_inactive__2QRrA {
+  color: #5c657e;
+}
+.main-module_gallery-bar__2jTh6 .main-module_icon_inactive__2QRrA:hover {
+  cursor: default;
+}
+.main-module_gallery-bar__image-numbers__2gLMV {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imageNumbers;
+  margin-right: 50px;
+}
+.main-module_gallery-bar__image-description__15_99 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: description;
+  color: #d0e6ff;
+  font-weight: normal;
+  overflow-wrap: anywhere;
+  display: none;
+}
+.main-module_gallery-bar__copy-link__25EN6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: copyLink;
+  display: flex;
+  font-size: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  padding: 6px 10px;
+  margin-left: 50px;
+}
+.main-module_gallery-bar__copy-link__25EN6:hover {
+  cursor: pointer;
+}
+.main-module_gallery-bar__copy-link__25EN6 .main-module_icon__2BB-1 {
+  margin-right: 11px;
+}
+.main-module_gallery-bar__copy-link__25EN6 .main-module_hide_desktop__3M7Iv {
+  display: inline-block;
+}
+.main-module_gallery-bar__copy-link_confirmation__2Q0uN {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 15rem;
+  background-color: #d2eec4;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 3px;
+  color: #5a9986;
+}
+.main-module_gallery-bar__copy-link_confirmation-text__14S1V {
+  padding: 0 10px;
+  text-align: center;
+  min-width: 8rem;
+  width: 100%;
+}
+.main-module_gallery-bar__image-close__3tyC0 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: close;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-left: 30px;
+}
+.main-module_gallery__1Ajgx .main-module_gallery-bar__copy-link__25EN6 .main-module_hide_mobile__37dVg {
+  display: none;
+}
+.main-module_gallery__1Ajgx .main-module_loader__mask__2I5iM {
+  background: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-module_gallery__1Ajgx .main-module_loader__mask__2I5iM::after {
+  content: '';
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTkuNDc0IDBIMTh2OS40NzRIOS40NzR6Ii8+CiAgICA8L2RlZnM+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGZpbGw9IiNERUU0RjciIGQ9Ik05IDE4QTkgOSAwIDEgMSA5IDBhOSA5IDAgMCAxIDAgMTh6bTAtMi42NDNBNi4zNTcgNi4zNTcgMCAxIDAgOSAyLjY0M2E2LjM1NyA2LjM1NyAwIDAgMCAwIDEyLjcxNHoiLz4KICAgICAgICA8bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+CiAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPHBhdGggZmlsbD0iIzNDODNFQyIgZD0iTTkgMThBOSA5IDAgMSAxIDkgMGE5IDkgMCAwIDEgMCAxOHptMC0yLjY0M0E2LjM1NyA2LjM1NyAwIDEgMCA5IDIuNjQzYTYuMzU3IDYuMzU3IDAgMCAwIDAgMTIuNzE0eiIgbWFzaz0idXJsKCNiKSIvPgogICAgPC9nPgo8L3N2Zz4=') no-repeat;
+  background-size: 30px 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: main-module_rotate__yjo_3 2s linear infinite;
+          animation: main-module_rotate__yjo_3 2s linear infinite;
+  transform-origin: 50% 50%;
+}
+.main-module_gallery__1Ajgx .main-module_icon__2BB-1 {
+  display: inline-block;
+  font-family: 'aurora-icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  text-decoration: none;
+  position: relative;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main-module_gallery__1Ajgx .main-module_icon__2BB-1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main-module_gallery__1Ajgx .main-module_icon-close__1bvaY::before {
+  content: '\E90D';
+}
+.main-module_gallery__1Ajgx .main-module_icon-loader__2wviL::before {
+  content: '\E906';
+}
+.main-module_gallery__1Ajgx .main-module_icon-link__rVNQ8::before {
+  content: '\E973';
+}
+.main-module_gallery__1Ajgx .main-module_icon-success__1ltet::before {
+  content: '\E93D';
+}
+.main-module_gallery__1Ajgx .main-module_icon-arrow__2lOOE {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -60px;
+  font-size: 19px;
+  color: #ffffff;
+}
+.main-module_gallery__1Ajgx .main-module_icon-arrow__2lOOE::before {
+  content: '\E920';
+}
+.main-module_gallery__1Ajgx .main-module_icon-arrow-container__2jvGl {
+  height: 100%;
+  width: 52px;
+  position: fixed;
+  top: 60px;
+  background-color: rgba(36, 36, 36, 0.3);
+  z-index: 2;
+  cursor: pointer;
+}
+.main-module_gallery__1Ajgx .main-module_icon-arrow-container_previous__2y-vp {
+  left: 0;
+}
+.main-module_gallery__1Ajgx .main-module_icon-arrow-container_next__1gy5p {
+  right: 0;
+}
+.main-module_gallery__1Ajgx .main-module_icon-arrow-container__2jvGl:hover {
+  background-color: rgba(36, 36, 36, 0.6);
+}
+.main-module_gallery__1Ajgx .main-module_icon-arrow_rotate-180__3tVhZ {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.main-module_gallery__1Ajgx .main-module_hide__2dq3c {
+  display: none !important;
+}
+.main-module_gallery__1Ajgx .main-module_hide_mobile__37dVg {
+  display: none;
+}
+.main-module_gallery__1Ajgx .main-module_zoom-in__2kYCX {
+  cursor: zoom-in;
+}
+.main-module_gallery__1Ajgx .main-module_zoom-out__2DXiQ {
+  cursor: zoom-out;
+}
+.main-module_gallery__1Ajgx .main-module_grabbing__2uCRI {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.main-module_gallery_mobile__2NF8_ .main-module_gallery__images-container__y3z5v {
+  background-color: #242424;
+}
+.main-module_gallery_mobile__2NF8_ .main-module_gallery__images_with-transition__1cAJq {
+  transition: transform 0.3s cubic-bezier(0.25, 0.25, 0.25, 1) 0s;
+}
+@media screen and (min-width: 576px) {
+  .main-module_gallery__1Ajgx .main-module_gallery-bar__image-description__15_99 {
+    display: block;
+  }
+  .main-module_gallery__1Ajgx .main-module_gallery-bar__copy-link_confirmation__2Q0uN {
+    min-width: 20rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 820px) {
+  .main-module_gallery-bar__2jTh6 {
+    height: 80px;
+  }
+  .main-module_gallery-bar__copy-link_confirmation__2Q0uN {
+    top: 100px;
+  }
+  .main-module_gallery__1Ajgx .main-module_icon-arrow-container__2jvGl {
+    top: 80px;
+  }
+}
+@media screen and (min-width: 820px) {
+  .main-module_gallery__1Ajgx .main-module_hide_mobile__37dVg {
+    display: block;
+  }
+  .main-module_gallery__1Ajgx .main-module_gallery-bar__image-close__3tyC0 {
+    margin-left: 50px;
+  }
+  .main-module_gallery__1Ajgx .main-module_gallery-bar__copy-link__25EN6 .main-module_hide_mobile__37dVg {
+    display: block;
+  }
+  .main-module_gallery__1Ajgx .main-module_gallery-bar__copy-link__25EN6 .main-module_hide_desktop__3M7Iv {
+    display: none;
+  }
+}
+@-webkit-keyframes main-module_rotate__yjo_3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes main-module_rotate__yjo_3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+    <script type="text/javascript" src="/userdata/public/locales/pl_PL.js?sci=155"></script>
+            <script type="text/javascript" src="/skins/user/rwd_shoper_33/js/user.js?sci=155"></script>
+    
+    
+        
+    <script src="https://dcsaascdn.net/js/front-api-1.4.0.min.js" async=""></script>
+<script src="https://dcsaascdn.net/js/front-api-1.4.0.min.js" async=""></script>
+<meta name="google-site-verification" content="DRAw2J9wix1fRLEOsZiTgTe7sVIPseka7kAJ839O_PI">
+<meta name="google-site-verification" content="5-xx-orAiabmFv8vwTasEJNhI6qTW6bWh74JG82r2iY">
+<!-- Hotjar Tracking Code for https://slodyczowo.pl -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2665462,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script><script async="" src="https://static.hotjar.com/c/hotjar-2665462.js?sv=6"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TLFBJRH');</script>
+<!-- End Google Tag Manager -->
+<script>
+
+                    var fb_dynamic_ads_debug = 'false';
+
+                    function logDebug(el) {
+                        if (fb_dynamic_ads_debug === 'true') console.log(el);
+                    }
+
+                    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                            n.push=n;n.loaded=!0;n.version='2.0';n.agent='plshoper';n.queue=[];t=b.createElement(e);t.async=!0;
+                            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                        document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+                    fbq('init', '1472219532984701');
+                    logDebug('fb_dynamic_ads_debug -> init with data: 1472219532984701');
+
+                    fbq('trackSingle', '1472219532984701', 'PageView');
+                    logDebug('fb_dynamic_ads_debug -> track PageView');
+
+                    function findProductParentAndId(el) {
+                        var id;
+                        logDebug('fb_dynamic_ads_debug -> looking for product id and parent');
+                        while ((el = el.parentElement) && !el.classList.contains('product')){
+                            if (el.id == 'box_productfull') {
+                                id = document.body.id.match(/\d+/g)[0];
+                                logDebug('fb_dynamic_ads_debug -> found id: '+id+', parent:');
+                                logDebug(el);
+                                return [el, id];
+                            }
+                        }
+                        id = el.getAttribute('data-product-id');
+                        logDebug('fb_dynamic_ads_debug -> found id: '+id+', parent:');
+                        logDebug(el);
+                        return [el, id];
+                    }
+
+                    function price_to_number(v){
+                        if(!v){return 0;}
+                            v = v.split('.').join('');
+                        v = v.split(',').join('.');
+                        return Number(v.replace(/[^0-9.]/g, ""));
+                    }
+
+                    function findProductPrice(el) {
+                        logDebug('fb_dynamic_ads_debug -> looking for product price');
+                        var search;
+                        try {
+                            search = el.getElementsByClassName('price')[0];
+                            search = search.getElementsByTagName('em')[0].innerHTML;
+                        } catch (e) {
+                            search = el.getElementsByClassName('price')[0];
+                            search = search.innerHTML;
+                        }
+                        search = price_to_number(search);
+                        logDebug('fb_dynamic_ads_debug -> found price: ' + search);
+                        return search;
+                    }
+
+                    function fbqAddToBasket(form) {
+                        var productParent;
+                        var productPrice;
+                        var productId;
+                        productParent = findProductParentAndId(form);
+                        if (null == productParent) {
+                            logDebug('fb_dynamic_ads_debug -> ERROR: product id and parent not found');
+                            return;
+                        }
+                        productId = productParent[1];
+                        productPrice = findProductPrice(productParent[0]);
+                        fbq('trackSingle', '1472219532984701', 'AddToCart', {
+                            content_ids: [productId],
+                            content_type: 'product',
+                            value: productPrice,
+                            currency: Shop.values.currency
+                        });
+                        logDebug('fb_dynamic_ads_debug -> track AddToCart with data:');
+                        logDebug({content_ids: [productId], content_type: 'product', value: productPrice, currency: Shop.values.currency});
+                    }
+
+                    Shop.postinit.fbpixel = function() {
+
+                        
+
+                        
+
+                        this.addEvent('cart:add:ajax', function(a, b) {
+                            var form;
+                            if (b == null) {
+                                form = a;
+                            } else {
+                                form = b[0];
+                            }
+                            logDebug("fb_dynamic_ads_debug -> ajax add to cart action:");
+                            logDebug(form);
+                            try {
+                                fbqAddToBasket(form);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                        });
+
+                        this.addEvent('cart:add', function(a, b, c, d) {
+                            logDebug("fb_dynamic_ads_debug -> non-ajax add to cart action");
+                            var form;
+                            var options;
+                            if (d == null) {
+                                form = c;
+                                options = b;
+                            } else {
+                                form = d[0];
+                                options = c;
+                            }
+                            if (!options.preventSubmit) {
+                                if (!form.querySelectorAll('[name=required]')[0]) {
+                                    if (form.getAttribute('method') != 'get') {
+                                        logDebug("fb_dynamic_ads_debug -> non-ajax add to cart action:");
+                                        logDebug(form);
+                                        try {
+                                            fbqAddToBasket(form);
+                                        } catch (e) {
+                                            console.log(e);
+                                        }
+                                    }
+                                } else {
+                                    logDebug("fb_dynamic_ads_debug -> product options required (non-ajax add to cart action stopped)");
+                                }
+                            } else {
+                                logDebug("fb_dynamic_ads_debug -> form submit prevented (non-ajax add to cart action stopped)");
+                            }
+                        });
+
+                    };
+                </script>
+                <noscript>
+                    <img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=1472219532984701&ev=PageView&noscript=1' />
+                </noscript>
+<style id="wce-app-tags-live">@font-face{font-family:'app-tags-icons';src:url('//webcoderscdn.eu/appstore/app/tags/fonts/app-tags-icons.eot?8s2ldx');src:url('//webcoderscdn.eu/appstore/app/tags/fonts/app-tags-icons.eot?8s2ldx#iefix') format('embedded-opentype'),url('//webcoderscdn.eu/appstore/app/tags/fonts/app-tags-icons.ttf?8s2ldx') format('truetype'),url('//webcoderscdn.eu/appstore/app/tags/fonts/app-tags-icons.woff?8s2ldx') format('woff'),url('//webcoderscdn.eu/appstore/app/tags/fonts/app-tags-icons.svg?8s2ldx#wce-info-icons-app') format('svg');font-weight:normal;font-style:normal;font-display:block}[data-wce-icon-app-cs-tags]:before,[data-wce-icon-app-tags]:before{font-family:'app-tags-icons';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;white-space:pre;letter-spacing:0;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga=1";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;font-feature-settings:"liga";-webkit-font-variant-ligatures:discretionary-ligatures;font-variant-ligatures:discretionary-ligatures;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block}[data-wce-icon-app-cs-tags]:before{content:attr(data-wce-icon-app-cs-tags)}[data-wce-icon-app-tags]:before{content:attr(data-wce-icon-app-tags)}.product ul.tags,#box_productfull ul.tags{display:none !important}.wce_apptags{margin:-5px 0 0 -5px;position:absolute;top:0;left:0;max-width:100%;display:flex;flex-wrap:wrap;z-index:4}.wce_apptags a{display:block;padding:2px 7px;font-size:10px;text-transform:uppercase;height:100%;display:flex;justify-content:center;align-items:center;box-sizing:border-box;border-radius:3px;position:relative;font-weight:normal;background:#e7e7e7;border:1px solid #d8d8d8;color:#282828;cursor:default;transition:all .3s ease-in-out}.wce_apptags a[href]{cursor:pointer}.wce_apptags a .wce_picto img+img{position:absolute;top:-100%;left:-100%;right:-100%;bottom:-100%;margin:auto;max-width:100%;max-height:100%;transition:opacity .3s ease-in-out;opacity:0;z-index:1}.wce_apptags a:hover .wce_picto img+img{opacity:1}.wce_apptags a.wce_size-s{font-size:10px !important}.wce_apptags a.wce_size-m{font-size:14px !important}.wce_apptags a.wce_size-l{font-size:18px !important}.wce_apptags a.wce_as-picto{padding:4px;border-radius:15px !important}.wce_apptags a.wce_as-picto i{display:block;font-size:12px;width:15px;height:15px;line-height:14px;text-align:center}.wce_apptags a.wce_as-picto.wce_img{background:none !important;border:none !important;color:#000;padding:0}.wce_apptags a.wce_as-picto.wce_img img{max-height:25px !important}.wce_apptags a.wce_as-picto.wce_size-m{border-radius:25px !important}.wce_apptags a.wce_as-picto.wce_size-m i{font-size:15px;width:25px;height:25px;line-height:24px}.wce_apptags a.wce_as-picto.wce_size-m.wce_img img{max-height:35px !important}.wce_apptags a.wce_as-picto.wce_size-l{border-radius:35px !important}.wce_apptags a.wce_as-picto.wce_size-l i{font-size:20px;width:35px;height:35px;line-height:34px}.wce_apptags a.wce_as-picto.wce_size-l.wce_img img{max-height:45px !important}.wce_apptags a.wce_as-picto-name{padding-left:25px}.wce_apptags a.wce_as-picto-name .wce_picto{position:absolute;left:0;right:0;height:100%;width:20px}.wce_apptags a.wce_as-picto-name i{display:flex;justify-content:center;align-items:center;font-size:12px}.wce_apptags a.wce_as-picto-name.wce_size-m{padding-left:30px}.wce_apptags a.wce_as-picto-name.wce_size-m .wce_picto{width:25px}.wce_apptags a.wce_as-picto-name.wce_size-m i{font-size:14px}.wce_apptags a.wce_as-picto-name.wce_size-l{padding-left:35px}.wce_apptags a.wce_as-picto-name.wce_size-l .wce_picto{width:30px}.wce_apptags a.wce_as-picto-name.wce_size-l i{font-size:18px}.wce_apptags a.wce_as-picto-name i,.wce_apptags a.wce_as-picto-name img{position:absolute;top:-100%;left:-100%;right:-100%;bottom:-100%;margin:auto;max-width:100%;max-height:100%}.wce_apptags li{margin:5px 0 0 5px;display:inline-block;line-height:normal}.wce_apptags.wce_separe{position:relative;top:auto;left:auto;margin-top:1em}.wce_apptags.wce_additional{position:relative;top:auto;left:auto}.modal-body img.wce_tag_img{display:none}/*# sourceMappingURL=shop.css.map */.wce_apptags{ color: blue; }</style> <style id="wce_tags-custom"> .wce_apptags a{ background-color: #e7e7e7; border-color: #d8d8d8; color: #282828; } .wce_apptags a[href]:hover{ background-color: #cccccc; border-color: #cccccc; color: #d8d8d8; } .wce_apptags a.wceTag262d4171410c9bdd8d8e07cbe109331c{ background-color: #D90E00; border-color: #361515; color: #FFFFFF; } .wce_apptags a[href].wceTag262d4171410c9bdd8d8e07cbe109331c:hover{ background-color: #FC8D8D; border-color: #000000; color: #000000; } .wce_apptags a.wceTagNew{ background-color: #2274E0; border-color: #A3B6FF; color: #FFFFFF; } .wce_apptags a[href].wceTagNew:hover{ background-color: #0B2CB3; border-color: #C4CCFF; color: #FFFFFF; } .wce_apptags a.wceTagPromotion{ background-color: #F50000; border-color: #FFB3B3; color: #FFFFFF; } .wce_apptags a[href].wceTagPromotion:hover{ background-color: #DE5757; border-color: #FFCCCC; color: #FFFFFF; } </style>
+<script type="text/javascript" id="wceTagsAppJs"> (function() { var wce_tags = document.createElement('script'); wce_tags.type = 'text/javascript'; wce_tags.async = true; wce_tags.src = 'https://tags.webcoders.eu/Box/App/javascript/lc/33669a5ef542d10d47a784ae3428274c479d8590/locale/'+window.Shop.lang.name+'/name/shop.js'; var wce_tags_tag = document.getElementsByTagName('script')[0]; wce_tags_tag.parentNode.insertBefore(wce_tags, wce_tags_tag); })(); </script>
+<script type="text/javascript" id="wcePopupAppJs"> (function() { var wce_popup = document.createElement('script'); wce_popup.type = 'text/javascript'; wce_popup.async = true; wce_popup.src = 'https://popupapp.webcoders.eu/Box/App/javascript/lc/33669a5ef542d10d47a784ae3428274c479d8590/locale/'+window.Shop.lang.name+'/name/shop.js'; var wce_popup_tag = document.getElementsByTagName('script')[0]; wce_popup_tag.parentNode.insertBefore(wce_popup, wce_popup_tag); })(); </script>
+<style id="wce-app-popup-live">body.wce_content-blurr>.wrap{filter:grayscale(100%) blur(4px)}.wce_popup-tiles-wrap{position:relative;z-index:1;max-height:100%;width:1200px;max-width:100%;overflow:auto;font-size:16px;box-sizing:border-box;padding:10px;display:flex;flex-wrap:wrap}.wce_popup-tiles-wrap .wce_popup-tiles-head{width:100%;display:block;font-size:2em;text-align:center;position:-webkit-sticky;position:sticky;z-index:3;top:0;line-height:1em;padding:10px 0}@media screen and (max-width:980px){.wce_popup-tiles-wrap .wce_popup-tiles-head{font-size:1.3em}}.wce_popup-consolidator .wce_popup-trigger{position:relative;padding:1em;flex:1 0 25%;height:200px;display:flex;flex-wrap:wrap;justify-content:center;align-content:center;box-sizing:border-box;cursor:pointer;z-index:1;transform:scale(.9);transition:transform .3s ease-in-out;will-change:transform}@media screen and (max-width:980px){.wce_popup-consolidator .wce_popup-trigger{flex:1 0 50%}}.wce_popup-consolidator .wce_popup-trigger:before{content:"";display:block;position:absolute;top:0;right:0;left:0;bottom:0;border:1px solid #fff;border-radius:3px}.wce_popup-consolidator .wce_popup-trigger span{position:relative}.wce_popup-consolidator .wce_popup-trigger:hover{transform:scale(1);z-index:2}.wce_popup-consolidator{position:fixed;z-index:100000;top:0;left:0;right:0;bottom:0;overflow:auto;display:flex;flex-wrap:wrap;justify-content:center;align-content:center}.wce_popup-consolidator.wce_overflow-hidden,.wce_popup-consolidator.wce_overflow-hidden .wce_overlay-popup{overflow:hidden}.wce_popup-consolidator-trigger,.wce_popup-consolidator-close{position:fixed;width:48px;height:48px;line-height:48px;text-align:center;cursor:pointer}.wce_popup-consolidator-trigger{z-index:100000}.wce_popup-consolidator-trigger:before{font-family:FontAwesome;content:"\f0a2";font-weight:normal;font-style:normal;display:block;text-align:center;position:relative;width:48px;height:48px;line-height:48px;font-size:27px;transform-origin:50% 0;animation:wce_bellShake 3s linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.wce_popup-consolidator-trigger span{box-sizing:border-box;border:solid rgba(255,255,255,0.2);display:block;white-space:pre;padding:0 15px;font-size:16px;overflow:hidden;transition:all .2s ease-in-out;transform:scaleX(0);position:absolute;top:0;bottom:0}.wce_popup-consolidator-trigger:hover:before{animation:none}.wce_popup-consolidator-trigger.wce_has-label:hover span{transform:scaleX(1)}.wce_popup-consolidator-trigger.wce_none{display:none}.wce_popup-consolidator-trigger.wce_minimize-animation{-webkit-animation-name:wce_minimizeTrigger;animation-name:wce_minimizeTrigger;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}.wce_popup-consolidator-trigger.wce_minimize-animation:before{animation:none}.wce_popup-consolidator-trigger.wce_no-animation:before{animation:none}.wce_popup-consolidator-close{z-index:100002;top:0;right:0;color:#fff;font-size:48px;opacity:.7;transition:font-size .2s linear,opacity .2s ease-in-out;font-family:monospace}.wce_popup-consolidator-close:hover{font-size:60px;color:#fff;opacity:1}.wce_popup-consolidator:before{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0);opacity:0;transform:opacity .3s ease-in-out,background-color .3s ease-in-out}.wce_popup-consolidator:not(.wce_popup-active):before{background:#000;opacity:.75}.wce_popup-consolidator .wce_none{display:none !important}.wce_overlay-popup{position:absolute;top:0;left:0;width:100%;height:100%;padding:15px;overflow:auto;box-sizing:border-box;display:flex;align-items:center;justify-content:center}.wce_overlay-popup:not([style*='none'])~.wce_overlay-popup{background:none}.wce_overlay-popup[data-window-type="gateway"]{z-index:100003}.wce_overlay-popup:before{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%}.wce_popup{font-size:14px;max-width:100%;max-height:100%;-webkit-animation-duration:.75s;animation-duration:.75s;z-index:1}.wce_popup .wce_popup-head{position:relative}.wce_popup .wce_popup-head .wce_popup-head-text{border-bottom:1px solid #d8d8d8;padding:15px;display:block;font-size:1.5vw;line-height:1.3em;word-wrap:break-word}@media screen and (max-width:874px){.wce_popup .wce_popup-head .wce_popup-head-text{font-size:13px}}@media screen and (min-width:1200px){.wce_popup .wce_popup-head .wce_popup-head-text{font-size:18px}}.wce_popup .wce_popup-footer{border-top:1px solid #d8d8d8;padding:15px;position:relative;text-align:center}.wce_popup .wce_popup-basket-footer{display:grid;grid-gap:10px}.wce_popup .wce_popup-basket-footer .btn{width:100%;box-sizing:border-box}@media screen and (min-width:768px){.wce_popup .wce_popup-basket-footer{grid-template-columns:1fr 1fr}}@media screen and (max-width:768px){.wce_popup .wce_popup-basket-footer .btn{order:2}.wce_popup .wce_popup-basket-footer .wce_goto-basket{order:1}}.wce_popup .wce_popup-close:not(.btn):not(.wce_popup-basket-product){display:block;position:absolute;width:26px;height:26px;line-height:23px;text-align:center;font-size:19px;top:-15px;right:-15px;border-radius:50%;color:#fff;background:#282828;border:2px solid #282828;cursor:pointer;transition:all .3s ease-in-out;z-index:1;box-shadow:0 0 0 2px #fff;font-family:Verdana}.wce_popup .wce_popup-close:not(.btn):not(.wce_popup-basket-product):hover{background:#fff;color:#282828}.wce_popup .wce_popup-body{position:relative}.wce_popup .wce_popup-body-frame,.wce_popup .wce_popup-body-image{position:absolute;top:0;right:0;left:0;bottom:0;display:flex;align-items:center;justify-content:center}.wce_popup .wce_popup-body-image img{max-height:100%}.wce_popup .wce_popup-body-frame{margin:15px 0}.wce_popup .wce_popup-body-frame>*{padding:0 15px;overflow:auto;box-sizing:border-box;max-height:100%;line-height:1}.wce_popup .wce_popup-body-frame .resetcss p{margin-top:0}.wce_popup .wce_popup-body-form{padding:15px;position:absolute;bottom:0;left:0;right:0;z-index:1}.wce_popup .wce_popup-body-form .wce_popup-from-lay{display:flex}.wce_popup .wce_popup-body-form input[type="text"]{margin:0;padding:0 10px;height:40px;line-height:38px;border:1px solid #d8d8d8;width:100%;min-width:0}.wce_popup .wce_popup-body-form .btn{padding:0 10px;border:none;height:40px;line-height:1em;overflow:hidden;min-width:120px;font-size:14px}.wce_popup .wce_popup-body-form~.wce_popup-body-frame{bottom:70px;margin-bottom:0}.wce_popup .wce_popup-body-form .wce_popup-body-proportion{position:absolute;width:100%;bottom:0;left:0}.wce_popup .wce_popup-body-form .wce_sender-container{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%;display:none}.wce_popup .wce_popup-body-form .wce_sender-container.wce_visible{display:block}.wce_popup .wce_popup-body-form.loader .wce_sender-container{display:none}.wce_popup .wce_popup-body-form.loader:before{background:rgba(255,255,255,0.3);top:15px;left:15px;right:15px;bottom:15px}.wce_popup .wce_popup-body-form.loader:after{font-size:18px;width:18px;height:18px;line-height:18px;text-align:center;top:calc(50% - 9px);left:30px}.wce_popup fieldset{position:relative}.wce_popup form{margin:0}.wce_popup .wce_alert{position:absolute;bottom:100%;left:15px;background:#fff;padding:5px;line-height:1em;font-size:11px;border-radius:3px}.wce_popup .wce_alert>p{position:relative;z-index:1}.wce_popup .wce_alert:before{content:"";display:block;width:7px;height:7px;background:#fff;transform:rotate(45deg);transform-origin:0 0;position:absolute;top:calc(100% - 5px);left:1em}.wce_popup .wce_alert.wce_error{color:#e4401c;border:1px solid #e4401c}.wce_popup .wce_alert.wce_error:before{border-right:1px solid #e4401c;border-bottom:1px solid #e4401c}.wce_popup .wce_alert.wce_success{color:#2d6b02;border:1px solid #2d6b02}.wce_popup .wce_alert.wce_success:before{border-right:1px solid #2d6b02;border-bottom:1px solid #2d6b02}.wce_popup .wce_disclaimer{position:absolute;bottom:100%;left:0;z-index:-1;width:100%}.wce_popup .wce_disclaimer .wce_disclaimer-label{display:inline-block;padding:.3em 1em;background:#fff;border-radius:3px 3px 0 0;box-shadow:0 0 10px 0 rgba(0,0,0,0.2);color:#000;font-size:11px;cursor:pointer;border:solid #d8d8d8;border-width:1px 1px 0;opacity:1;transition:opacity .3s ease-in-out;will-change:opacity}.wce_popup .wce_disclaimer .wce_disclaimer-content{position:absolute;bottom:0;background:#fff;color:#000;border:solid #d8d8d8;border-width:1px 1px 0;border-radius:3px 3px 0 0;box-shadow:0 0 10px 0 rgba(0,0,0,0.2);padding:10px;box-sizing:border-box;width:100%;max-height:280px;overflow:auto;transform:scaleY(0);transform-origin:100% 100%;transition:transform .3s ease-in-out;will-change:transform;scrollbar-width:thin;scrollbar-color:#282828 #ffffff}.wce_popup .wce_disclaimer .wce_disclaimer-content::-webkit-scrollbar{width:9px}.wce_popup .wce_disclaimer .wce_disclaimer-content::-webkit-scrollbar-track{background:#ffffff;border-radius:8px}.wce_popup .wce_disclaimer .wce_disclaimer-content::-webkit-scrollbar-thumb{background-color:#282828;border-radius:5px;border:2px solid #ffffff}.wce_popup .wce_disclaimer .wce_disclaimer-content-head{font-size:11px;font-weight:bold;display:block}.wce_popup .wce_disclaimer .resetcss{font-size:11px}.wce_popup .wce_disclaimer .resetcss a:not(:hover){text-decoration:underline}.wce_popup .wce_popup-body-form input[type="text"]:focus~.wce_disclaimer .wce_disclaimer-label,.wce_popup form:hover .wce_disclaimer .wce_disclaimer-label{opacity:0}.wce_popup .wce_popup-body-form input[type="text"]:focus~.wce_disclaimer .wce_disclaimer-content,.wce_popup form:hover .wce_disclaimer .wce_disclaimer-content{transform:scaleY(1)}.wce_popup-basket-content{width:100%}.wce_popup-basket-content .resetcss{margin-bottom:30px}.wce_popup-basket-content .wce_popup-basket-nav{position:absolute;top:calc(50% - 24px);width:48px;height:48px;display:flex;justify-content:center;align-items:center;background:#ffffffcc;font-size:1.5em;cursor:pointer}.wce_popup-basket-content .wce_popup-basket-nav.wce_disabled{cursor:default;opacity:0}.wce_popup-basket-content .wce_popup-basket-nav.wce_prev{left:0}.wce_popup-basket-content .wce_popup-basket-nav.wce_prev:before{content:"\003c"}.wce_popup-basket-content .wce_popup-basket-nav.wce_next{right:0}.wce_popup-basket-content .wce_popup-basket-nav.wce_next:before{content:"\003e"}.wce_popup-products-wrap{position:relative;overflow:hidden}.wce_popup-products{display:flex;overflow-x:auto;overflow-y:hidden;margin:0 -15px;position:relative;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0) rgba(255,255,255,0)}.wce_popup-products.wce_loading:before{content:"";display:block;height:256px}.wce_popup-products.wce_loading:after{content:"";display:block;width:23px;height:23px;border:3px solid;border-color:#282828 #d8d8d8 #d8d8d8 #d8d8d8;border-radius:50%;position:absolute;top:calc(50% - 13px);left:calc(50% - 13px);opacity:.6;-webkit-animation:wce-popup-loader .8s infinite linear;animation:wce-popup-loader .8s infinite linear}.wce_popup-products::-webkit-scrollbar{width:0}.wce_popup-products::-webkit-scrollbar-track{background:rgba(255,255,255,0);border-radius:0}.wce_popup-products::-webkit-scrollbar-thumb{background-color:rgba(255,255,255,0);border-radius:0;border:none}.wce_popup-products .wce_popup-basket-product{flex:1 0 33.33%;max-width:33.33%;display:block;padding:0 15px;box-sizing:border-box}@media screen and (max-width:480px){.wce_popup-products .wce_popup-basket-product{flex:1 0 100%;max-width:100%}}.wce_popup-products .wce_popup-basket-product+.wce_popup-basket-product{border-left:1px solid #d8d8d8}.wce_popup-products .wce_popup-basket-product .wce_row{display:block}@media screen and (min-width:481px){.wce_popup-products .wce_popup-basket-product .wce_img-wrap{height:0;padding:0 0 100%;position:relative}.wce_popup-products .wce_popup-basket-product .wce_img-wrap img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:scale-down;background:#fff}}@media screen and (max-width:480px){.wce_popup-products .wce_popup-basket-product .wce_img-wrap{height:100px}.wce_popup-products .wce_popup-basket-product .wce_img-wrap img{max-height:100%;max-width:100%;margin:0 auto;display:block}}.wce_popup-products .wce_popup-basket-product .wce_name-wrap{margin:10px 0;position:relative;height:1.1em;line-height:1.05em;font-size:13px;overflow:hidden}.wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_name-wrap-inner{display:block;position:absolute;top:0;left:0;right:0;background:#ffffffcc;height:1.1em}.wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_name{display:block;min-height:1.1em}.wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_name+.wce_subproduct{margin-top:10px}.wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_variant{font-size:.8em;display:block;margin-top:10px}.wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_subproduct{font-size:.8em;padding-left:1.5em;position:relative}.wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_subproduct:before{content:"\2022";position:absolute;left:.2em;font-size:2em;top:1px}.wce_popup-products .wce_popup-basket-product .wce_price{line-height:1.3em}.wce_popup-products .wce_popup-basket-product .wce_price .wce_separator{margin:0 .3em}.wce_popup-products .wce_popup-basket-product:hover .wce_name-wrap{overflow:visible}.wce_popup-products .wce_popup-basket-product:hover .wce_name-wrap .wce_name-wrap-inner{top:auto;bottom:0;height:auto}@-webkit-keyframes wce-popup-loader{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg)}}@keyframes wce-popup-loader{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}.wce_popup.wce_display-in{-webkit-animation-name:wce_bounceIn;animation-name:wce_bounceIn}.wce_popup.wce_display-in-left{-webkit-animation-name:wce_bounceInLeft;animation-name:wce_bounceInLeft}.wce_popup.wce_display-in-right{-webkit-animation-name:wce_bounceInRight;animation-name:wce_bounceInRight}.wce_popup.wce_display-out{-webkit-animation-name:wce_bounceOut;animation-name:wce_bounceOut}.wce_popup.wce_display-out-left{-webkit-animation-name:wce_bounceOutLeft;animation-name:wce_bounceOutLeft}.wce_popup.wce_display-out-left-top{-webkit-animation-name:wce_bounceOutLeftTop;animation-name:wce_bounceOutLeftTop}.wce_popup.wce_display-out-left-bottom{-webkit-animation-name:wce_bounceOutLeftBottom;animation-name:wce_bounceOutLeftBottom}.wce_popup.wce_display-out-right{-webkit-animation-name:wce_bounceOutRight;animation-name:wce_bounceOutRight}.wce_popup.wce_display-out-right-top{-webkit-animation-name:wce_bounceOutRightTop;animation-name:wce_bounceOutRightTop}.wce_popup.wce_display-out-right-bottom{-webkit-animation-name:wce_bounceOutRightBottom;animation-name:wce_bounceOutRightBottom}body.mobile .wce_popup .wce_popup-body-form .btn{min-width:60px}body.mobile .wce_popup .wce_popup-body-form .btn:before{font-family:FontAwesome;font-weight:normal;font-style:normal;content:"\f061"}body.mobile .wce_popup .wce_popup-body-form .btn span{display:none}@-webkit-keyframes wce_bounceIn{from,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215, .61, .355, 1);animation-timing-function:cubic-bezier(.215, .61, .355, 1)}0%{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(.9, .9, .9);transform:scale3d(.9, .9, .9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(.97, .97, .97);transform:scale3d(.97, .97, .97)}to{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@keyframes wce_bounceIn{from,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215, .61, .355, 1);animation-timing-function:cubic-bezier(.215, .61, .355, 1)}0%{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(.9, .9, .9);transform:scale3d(.9, .9, .9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(.97, .97, .97);transform:scale3d(.97, .97, .97)}to{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@-webkit-keyframes wce_bounceOut{20%{-webkit-transform:scale3d(.9, .9, .9);transform:scale3d(.9, .9, .9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}to{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}}@keyframes wce_bounceOut{20%{-webkit-transform:scale3d(.9, .9, .9);transform:scale3d(.9, .9, .9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}to{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}}@-webkit-keyframes wce_bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px, 0, 0);transform:translate3d(20px, 0, 0)}to{opacity:0;-webkit-transform:translate3d(-2000px, 0, 0);transform:translate3d(-2000px, 0, 0)}}@keyframes wce_bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px, 0, 0);transform:translate3d(20px, 0, 0)}to{opacity:0;-webkit-transform:translate3d(-2000px, 0, 0);transform:translate3d(-2000px, 0, 0)}}@-webkit-keyframes wce_bounceOutLeftTop{20%{opacity:1;-webkit-transform:translate3d(20px, 20px, 0);transform:translate3d(20px, 20px, 0)}to{opacity:0;-webkit-transform:translate3d(-2000px, -2000px, 0);transform:translate3d(-2000px, -2000px, 0)}}@keyframes wce_bounceOutLeftTop{20%{opacity:1;-webkit-transform:translate3d(20px, -20px, 0);transform:translate3d(20px, 20px, 0)}to{opacity:0;-webkit-transform:translate3d(-2000px, -2000px, 0);transform:translate3d(-2000px, -2000px, 0)}}@-webkit-keyframes wce_bounceOutLeftBottom{20%{opacity:1;-webkit-transform:translate3d(20px, -20px, 0);transform:translate3d(20px, -20px, 0)}to{opacity:0;-webkit-transform:translate3d(-2000px, 2000px, 0);transform:translate3d(-2000px, 2000px, 0)}}@keyframes wce_bounceOutLeftBottom{20%{opacity:1;-webkit-transform:translate3d(20px, -20px, 0);transform:translate3d(20px, -20px, 0)}to{opacity:0;-webkit-transform:translate3d(-2000px, 2000px, 0);transform:translate3d(-2000px, 2000px, 0)}}@-webkit-keyframes wce_bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px, 0, 0);transform:translate3d(-20px, 0, 0)}to{opacity:0;-webkit-transform:translate3d(2000px, 0, 0);transform:translate3d(2000px, 0, 0)}}@keyframes wce_bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px, 0, 0);transform:translate3d(-20px, 0, 0)}to{opacity:0;-webkit-transform:translate3d(2000px, 0, 0);transform:translate3d(2000px, 0, 0)}}@-webkit-keyframes wce_bounceOutRightTop{20%{opacity:1;-webkit-transform:translate3d(-20px, 20px, 0);transform:translate3d(-20px, 20px, 0)}to{opacity:0;-webkit-transform:translate3d(2000px, -2000px, 0);transform:translate3d(2000px, -2000px, 0)}}@keyframes wce_bounceOutRightTop{20%{opacity:1;-webkit-transform:translate3d(-20px, 20px, 0);transform:translate3d(-20px, 20px, 0)}to{opacity:0;-webkit-transform:translate3d(2000px, -2000px, 0);transform:translate3d(2000px, -2000px, 0)}}@-webkit-keyframes wce_bounceOutRightBottom{20%{opacity:1;-webkit-transform:translate3d(-20px, -20px, 0);transform:translate3d(-20px, -20px, 0)}to{opacity:0;-webkit-transform:translate3d(2000px, 2000px, 0);transform:translate3d(2000px, 2000px, 0)}}@keyframes wce_bounceOutRightBottom{20%{opacity:1;-webkit-transform:translate3d(-20px, -20px, 0);transform:translate3d(-20px, -20px, 0)}to{opacity:0;-webkit-transform:translate3d(2000px, 2000px, 0);transform:translate3d(2000px, 2000px, 0)}}@-webkit-keyframes wce_bellShake{6%{-webkit-transform:rotate3d(0, 0, 1, 15deg);transform:rotate3d(0, 0, 1, 15deg)}12%{-webkit-transform:rotate3d(0, 0, 1, -10deg);transform:rotate3d(0, 0, 1, -10deg)}18%{-webkit-transform:rotate3d(0, 0, 1, 5deg);transform:rotate3d(0, 0, 1, 5deg)}24%{-webkit-transform:rotate3d(0, 0, 1, -5deg);transform:rotate3d(0, 0, 1, -5deg)}30%{-webkit-transform:rotate3d(0, 0, 1, 0deg);transform:rotate3d(0, 0, 1, 0deg)}}@keyframes wce_bellShake{6%{-webkit-transform:rotate3d(0, 0, 1, 15deg);transform:rotate3d(0, 0, 1, 15deg)}12%{-webkit-transform:rotate3d(0, 0, 1, -10deg);transform:rotate3d(0, 0, 1, -10deg)}18%{-webkit-transform:rotate3d(0, 0, 1, 5deg);transform:rotate3d(0, 0, 1, 5deg)}24%{-webkit-transform:rotate3d(0, 0, 1, -5deg);transform:rotate3d(0, 0, 1, -5deg)}30%{-webkit-transform:rotate3d(0, 0, 1, 0deg);transform:rotate3d(0, 0, 1, 0deg)}}@-webkit-keyframes wce_minimizeTrigger{0%{-webkit-transform:scale(1);transform:scale(1)}14%{-webkit-transform:scale(1.5);transform:scale(1.5)}28%{-webkit-transform:scale(1);transform:scale(1)}42%{-webkit-transform:scale(1.5);transform:scale(1.5)}70%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes wce_minimizeTrigger{0%{-webkit-transform:scale(1);transform:scale(1)}14%{-webkit-transform:scale(1.5);transform:scale(1.5)}28%{-webkit-transform:scale(1);transform:scale(1)}42%{-webkit-transform:scale(1.5);transform:scale(1.5)}70%{-webkit-transform:scale(1);transform:scale(1)}}body.wce_popup-leave-contact{background:none}body.wce_popup-leave-contact>.wrap{display:none}body.wce_popup-leave-contact #box_contact{margin:0;height:100vh;display:grid;align-items:flex-end;position:fixed;bottom:0;left:0;right:0}body.wce_popup-leave-contact #box_contact:before,body.wce_popup-leave-contact #box_contact:after{display:none}body.wce_popup-leave-contact #box_contact .bottombuttons{margin:0;justify-content:space-between;align-items:flex-end}body.wce_popup-leave-contact #box_contact .bottombuttons:before,body.wce_popup-leave-contact #box_contact .bottombuttons:after{display:none}body.wce_popup-leave-contact #box_contact .bottombuttons .f-grid-12{width:100%}body.wce_popup-leave-contact #box_contact .bottombuttons .btn{padding:0 10px;border:none;height:40px;line-height:1em;overflow:hidden;min-width:120px;font-size:14px}body.wce_popup-leave-contact form{margin:0;padding:15px}body.wce_popup-leave-contact .g-recaptcha,body.wce_popup-leave-contact #ask-recaptcha{width:auto;max-width:none;margin:0 0 -6px;-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;transform:none}body.wce_popup-leave-contact .g-recaptcha>div,body.wce_popup-leave-contact #ask-recaptcha>div{max-width:none !important;width:auto !important;height:auto !important}body.wce_popup-leave-contact .alert{position:absolute}body.wce_popup-leave-contact.mobile #box_contact .bottombuttons{flex-wrap:wrap;justify-content:flex-end}body.wce_popup-leave-contact.mobile #box_contact .bottombuttons .btn{min-width:60px}body.wce_popup-leave-contact.mobile #box_contact .bottombuttons .btn:before{font-family:FontAwesome;font-weight:normal;font-style:normal;content:"\f061"}body.wce_popup-leave-contact.mobile #box_contact .bottombuttons .btn span{display:none}.wce_preview-lock-events{pointer-events:none}</style>    <style id="wce_popup-custom"> .wce_popup-consolidator-trigger { background-color: #EBEBEB !important; color: #454545 !important; left: 0; top: 0px; } .wce_popup-consolidator, .wce_popup-consolidator-close, .wce_popup-consolidator-close:hover{ color: #383838; } .wce_popup-consolidator:not(.wce_popup-active):before{ background-color: #FFFFFF; opacity: 0; } .wce_popup-tiles-wrap .wce_popup-tiles-head{ background: #FFFFFF; } .wce_popup-consolidator .wce_popup-trigger{ color: #383838; background: #FFFFFF; } .wce_popup-consolidator .wce_popup-trigger:before{ border-color: #383838; } /*widget_ico*/ .wce_popup-consolidator-trigger span{ left: 100%; background-color: #EBEBEB; border-width: 0 0 0 1px; transform-origin: 0 50%; } @media screen and (max-width: 768px){ .wce_popup-consolidator-trigger{ display: none !important; } } .wce_popup .wce_popup-head{ background-color: #ffffff; color: #3B3B3B; } .wce_popup .wce_popup-head .wce_popup-head-text{ border-color:#3B3B3B33; } .wce_popup .wce_popup-body, .wce_popup .wce_popup-footer{ background: #FFFFFF; color: #000000; } .wce_popup .wce_popup-footer{ border-color: #00000033; } .wce_popup-active .wce_overlay-popup:before{ background-color: #FFFFFF; opacity: 0.6; } .wce_popup-products .wce_popup-basket-product{ color: #000000; } .wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_name-wrap-inner{ background: #FFFFFFcc; } .wce_popup-basket-content .wce_popup-basket-nav{ color: #000000; background: #FFFFFFcc; } .wce_popup-products .wce_popup-basket-product + .wce_popup-basket-product{ border-color: #00000033; } #wce_overlay-popup-wcePopup_5026 .wce_popup .wce_popup-head{ background-color: #ffffff; color: #3B3B3B; } #wce_overlay-popup-wcePopup_5026 .wce_popup .wce_popup-body, #wce_overlay-popup-wcePopup_5026 .wce_popup .wce_popup-footer{ background: #FFFFFF; color: #000000; } #wce_overlay-popup-wcePopup_5026 .wce_popup .wce_popup-footer{ border-color: #00000033; } #wce_overlay-popup-wcePopup_5026 .wce_popup{ box-shadow: 0 0 10vw 0 rgba(0,0,0,0.4); } .wce_popup-active .wce_overlay-popup#wce_overlay-popup-wcePopup_5026:before{ background-color: #FFFFFF; opacity: 0.6; } /**/ #wce_overlay-popup-wcePopup_5026 .wce_popup-products .wce_popup-basket-product{ color: #000000; } #wce_overlay-popup-wcePopup_5026 .wce_popup-products .wce_popup-basket-product .wce_name-wrap .wce_name-wrap-inner{ background: #FFFFFFcc; } #wce_overlay-popup-wcePopup_5026 .wce_popup-basket-content .wce_popup-basket-nav{ color: #000000; background: #FFFFFFcc; } #wce_overlay-popup-wcePopup_5026 .wce_popup-products .wce_popup-basket-product + .wce_popup-basket-product{ border-color: #00000033; } /**/ </style>
+    
+    
+<script async="" src="https://script.hotjar.com/modules.fee08111252915d9fd11.js" charset="utf-8"></script><link rel="preconnect" href="https://api.edrone.me"><link rel="preconnect" href="https://d3vhsxl1pwzf0p.cloudfront.net"><link rel="preconnect" href="https://dgk28ckagqims.cloudfront.net"><script src="https://d3bo67muzbfgtl.cloudfront.net/externals/custom/63ff5f7d74bbe/20230331-143004.js" type="text/javascript"></script><script type="text/javascript" charset="utf-8" async="" src="https://d3bo67muzbfgtl.cloudfront.net/externals/shared-new/mm.e8fb008d7f54704ef24b.js"></script><script type="text/javascript" charset="utf-8" async="" src="https://d3bo67muzbfgtl.cloudfront.net/externals/shared-new/social-proof.19794f781a30fb424ca9.js"></script><script type="text/javascript" charset="utf-8" async="" src="https://d3bo67muzbfgtl.cloudfront.net/externals/shared-new/custom-popup.0c21a3a109a7a0156b75.js"></script><script src="https://d3bo67muzbfgtl.cloudfront.net/externals/shared-new/zfk2jvpno3ei3px5k1og.preview_mode.js" type="text/javascript"></script><script src="https://d3bo67muzbfgtl.cloudfront.net/externals/shared-new/tcyvphk7oeovoopz6tos.push_register.js" type="text/javascript"></script></head>
+<body class="shop_login"><script>window.customerPrivacy.onPlatformConsentGranted(() =>{window.Shop = window.Shop || {}; Shop.values = Shop.values || {}; Shop.values.partnerEE=true; Shop.values.partnerData=16858808371197918;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','shopLayer','GTM-T68LWS');});</script>
+    
+
+    
+<div class="wrap rwd">
+    <header class="row"><div class="box resetcss box_custom" id="fx-contact-top">
+                    
+                                            <div class="fx-contact-top">
+<div class="fx-left-side"><a class="fx-phone" href="callto:+48 723 362 655">+48 723 362 655</a>
+<p>(PON-PT 9-16)</p>
+<a class="fx-email" href="mailto:sklep@slodyczowo.pl">sklep@slodyczowo.pl</a></div>
+<div class="fx-right-side">
+<div>#slodyczowosklep</div>
+</div>
+</div>
+                    
+                    
+                    
+                                        </div>
+                                    
+                            
+        
+        <div class="logo-bar row container sticky1"><div class="fx-shop-info">Sklep online z produktami z całego świata</div>
+            <a href="/" title="Strona główna" class="link-logo link-logo-img">
+                                    <img src="/skins/user/rwd_shoper_33/images/logo.svg" alt="Słodyczowo - Słodycze z całego świata!">
+                            </a>
+
+                                                <div class="basket right empty-basket">
+                        <a href="/pl/basket" title="Koszyk" class="count">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                            <span class="countlabel">
+                                <span>Koszyk:</span>
+                                <b>
+                                                                            (pusty)
+                                                                    </b>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="basket-contain fx-top-slider" style="top: 112.5px; left: 1003.23px; width: 187px;">
+                        <div class="basket-products">
+                            <ul class="basket-product-list">
+                                                            </ul>
+                        </div>
+                        
+                        <div class="basket-summery">
+                            <a href="/pl/basket">do kasy</a>
+                            <span class="basket-price">
+                                <span class="price-total">
+                                    <span>suma:</span>
+                                    <strong class="price-products">0,00&nbsp;zł</strong>
+                                </span>
+                                                            </span>
+                        </div>
+                    </div>
+                            
+                            <div class="search__container">
+                    
+<form data-product-view-type="" data-search-promotions-route="/pl/promotions" data-base-dir="" class="js__search search search-form" action="/pl/s" method="post">
+    
+    <div class="search-input search__input-area r--l-flex r--l-flex-vcenter">
+        <div class="search__input-area-item">
+            <span class="js__search-clear-btn search__btn icon icon-close search__icon none" role="button" aria-label="clear search input"></span>
+            <img class="search__loader none" src="/libraries/images/loader.svg">
+        </div>
+        
+        <div class="search__input-area-item search__input-area-item_grow">
+            <input maxlength="255" class="search__input" name="search" type="search" autocomplete="off" placeholder="Szukaj">
+        </div>
+
+        <div class="search__input-area-item">
+            <span class="js__search-close-btn icon icon-back" role="button" aria-label="close search"></span>
+            <button type="button" class="js__search-submit-btn search-btn search__input-area-item btn btn-red search__btn-search r--l-flex r--l-flex-vcenter r--l-flex-hcenter">
+                <span class="fa fa-search search__icon_size-l"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="search__content"></div>
+    
+    <input type="hidden" class="js__search-settings" value="eyJTSE9XX1BIUkFTRV9TVUdHRVNUSU9OUyI6MSwiU0hPUlRFTl9OQU1FUyI6MSwiU0hPV19NT0JJTEVfQlROIjoxLCJESVNQTEFZX0ZPUk1BVCI6MSwiUkVTVUxUU19QRVJfUEFHRSI6MTUsIkNBVEVHT1JJRVNfRU5BQkxFRCI6MSwiUFJPRFVDRVJTX0VOQUJMRUQiOjEsIlBST0RVQ1RTX0VOQUJMRUQiOjEsIkZST05UX09SSUdJTkFMX1FVRVJZX1BIUkFTRSI6IjAiLCJTSE9XX1BST0RVQ1RTX1NDT1JFIjowLCJTSE9XX1BST0RVQ1RTX0FWQUlMQUJJTElUWSI6MSwiUFJPRFVDVF9BVVRPQ09NUExFVEVfQlVUVE9OX1ZFUlNJT04iOjF9">
+</form>                </div>
+                    <div class="login-bar row container">
+                    <ul class="links inline">
+                                                                                    <li class="register">
+                                    <a href="/pl/reg" title="Zarejestruj się" class="register">
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                        <span>Zarejestruj się</span>
+                                    </a>
+                                </li>
+                                                        <li class="login">
+                                <a href="/pl/login" title="Zaloguj się" class="login">
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    <span>Zaloguj się</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </div><a href="https://sklep094626.shoparena.pl/pl/i/Czas-realizacji-zamowienia-i-koszty-dostawy/4" class="fx-delivery"></a></div>
+    </header>
+
+     
+    <div class="menu row sticky">
+        <nav class="innermenu row container relative">
+                            <ul class="menu-list large standard">
+                    <li class="home-link-menu-li">
+                        <h3>
+                            <a href="/" title="Strona główna">
+                                <img src="/libraries/images/1px.gif" alt="Strona główna" class="px1">
+                            </a>
+                        </h3>
+                    </li>
+
+                                                                        <li class="parent" id="hcategory_1">
+                                <h3>
+                                    <a href="/Zagraniczne-slodycze" title="Słodycze" id="headlink39" class="spanhover mainlevel">
+                                        <span>Słodycze</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                                                <div class="submenu level1">
+                <ul class="level1">
+                                            <li class="" id="hcategory_2">
+                            <h3>
+                                <a href="/Zagraniczne-Batony" title="Batony" id="headercategory2" class="spanhover">
+                                    <span>Batony</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="parent" id="hcategory_16">
+                            <h3>
+                                <a href="/Zagraniczne-ciastka" title="Ciastka" id="headercategory16" class="spanhover">
+                                    <span>Ciastka</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                                                                        <div class="submenu level2">
+                <ul class="level2">
+                                            <li class="" id="hcategory_123">
+                            <h3>
+                                <a href="/Azjatyckie-slodycze-Mochi" title="Mochi" id="headercategory123" class="spanhover">
+                                    <span>Mochi</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                    </li>
+                                            <li class="" id="hcategory_28">
+                            <h3>
+                                <a href="/Zagraniczne-cukierki" title="Cukierki" id="headercategory28" class="spanhover">
+                                    <span>Cukierki</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_96">
+                            <h3>
+                                <a href="/Czekolady-Czekoladki" title="Czekolady i czekoladki" id="headercategory96" class="spanhover">
+                                    <span>Czekolady i czekoladki</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_97">
+                            <h3>
+                                <a href="/Zagraniczne-gumy-do-zucia" title="Gumy" id="headercategory97" class="spanhover">
+                                    <span>Gumy</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_125">
+                            <h3>
+                                <a href="/Jelly-Fruits-owocowe-galaretki" title="Jelly Fruits" id="headercategory125" class="spanhover">
+                                    <span>Jelly Fruits</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="parent" id="hcategory_119">
+                            <h3>
+                                <a href="/Kracie-Poopin-Cookin-Zestawy-Japana-Zjadam-DIY" title="Kracie i zestawy DIY" id="headercategory119" class="spanhover">
+                                    <span>Kracie i zestawy DIY</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                                                                        <div class="submenu level2">
+                <ul class="level2">
+                                            <li class="" id="hcategory_169">
+                            <h3>
+                                <a href="/Slodycze/Zestawy-Kracie-DIY-bez-mikrofalowki" title="Zestawy DIY bez mikrofalówki" id="headercategory169" class="spanhover">
+                                    <span>Zestawy DIY bez mikrofalówki</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                    </li>
+                                            <li class="" id="hcategory_101">
+                            <h3>
+                                <a href="/Pianki" title="Pianki i waty cukrowe" id="headercategory101" class="spanhover">
+                                    <span>Pianki i waty cukrowe</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="parent" id="hcategory_13">
+                            <h3>
+                                <a href="/Zagraniczne-zelki" title="Żelki" id="headercategory13" class="spanhover">
+                                    <span>Żelki</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                                                                        <div class="submenu level2">
+                <ul class="level2">
+                                            <li class="" id="hcategory_207">
+                            <h3>
+                                <a href="/Slodycze/Kwasne-zelki" title="Kwaśne żelki" id="headercategory207" class="spanhover">
+                                    <span>Kwaśne żelki</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_208">
+                            <h3>
+                                <a href="/Slodycze/Zelki-lukrecjowe" title="Żelki lukrecjowe" id="headercategory208" class="spanhover">
+                                    <span>Żelki lukrecjowe</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_209">
+                            <h3>
+                                <a href="/Slodycze/Zelki-owocowe" title="Żelki owocowe" id="headercategory209" class="spanhover">
+                                    <span>Żelki owocowe</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_206">
+                            <h3>
+                                <a href="/Slodycze/Zelki-wegetarianskie" title="Żelki wegetariańskie" id="headercategory206" class="spanhover">
+                                    <span>Żelki wegetariańskie</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                    </li>
+                                    </ul>
+            </div>                                                            </li>
+                                                                                                <li class="parent" id="hcategory_7">
+                                <h3>
+                                    <a href="/Zagraniczne-slone-przekaski" title="Słone przekąski" id="headlink34" class="spanhover mainlevel">
+                                        <span>Słone przekąski</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                                                <div class="submenu level1">
+                <ul class="level1">
+                                            <li class="" id="hcategory_12">
+                            <h3>
+                                <a href="/Chipsy-chrupki" title="Chipsy i chrupki" id="headercategory12" class="spanhover">
+                                    <span>Chipsy i chrupki</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_82">
+                            <h3>
+                                <a href="/Zagraniczne-precle-krakersy" title="Precle i krakersy" id="headercategory82" class="spanhover">
+                                    <span>Precle i krakersy</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                            </li>
+                                                                                                <li class="parent" id="hcategory_80">
+                                <h3>
+                                    <a href="/Zagraniczne-napoje" title="Napoje" id="headlink35" class="spanhover mainlevel">
+                                        <span>Napoje</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                                                <div class="submenu level1">
+                <ul class="level1">
+                                            <li class="" id="hcategory_104">
+                            <h3>
+                                <a href="/Zagraniczne-napoje-gazowane" title="Gazowane" id="headercategory104" class="spanhover">
+                                    <span>Gazowane</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_116">
+                            <h3>
+                                <a href="/Napoje-niegazowane" title="Niegazowane" id="headercategory116" class="spanhover">
+                                    <span>Niegazowane</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_93">
+                            <h3>
+                                <a href="/Zagraniczne-energetyki-Monster-napoje-energetyczne" title="Energetyczne" id="headercategory93" class="spanhover">
+                                    <span>Energetyczne</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_130">
+                            <h3>
+                                <a href="/Napoje/Herbata-Bubble-Tea-w-puszce-kulki-perly-tapioka" title="Bubble Tea i herbaty" id="headercategory130" class="spanhover">
+                                    <span>Bubble Tea i herbaty</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                            </li>
+                                                                                                <li class="parent" id="hcategory_117">
+                                <h3>
+                                    <a href="/Zagraniczne-art-spozywcze" title="Art. Spożywcze" id="headlink36" class="spanhover mainlevel">
+                                        <span>Art. Spożywcze</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                                                <div class="submenu level1">
+                <ul class="level1">
+                                            <li class="" id="hcategory_121">
+                            <h3>
+                                <a href="/Ostre-zupki-noodles-mac-cheese" title="Dania instant, zupki i makarony" id="headercategory121" class="spanhover">
+                                    <span>Dania instant, zupki i makarony</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_106">
+                            <h3>
+                                <a href="/Kremy-do-smarowania" title="Kremy do smarowania" id="headercategory106" class="spanhover">
+                                    <span>Kremy do smarowania</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_105">
+                            <h3>
+                                <a href="/Amerykanskie-platki-sniadaniowe" title="Płatki śniadaniowe" id="headercategory105" class="spanhover">
+                                    <span>Płatki śniadaniowe</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_120">
+                            <h3>
+                                <a href="/Zagraniczne-sosy" title="Sosy" id="headercategory120" class="spanhover">
+                                    <span>Sosy</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_107">
+                            <h3>
+                                <a href="/Pozostale-sniadanie" title="Pozostałe" id="headercategory107" class="spanhover">
+                                    <span>Pozostałe</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                            </li>
+                                                                                                <li class="parent" id="hcategory_64">
+                                <h3>
+                                    <a href="/Edycje-specjalne" title="Edycje specjalne" id="headlink38" class="spanhover mainlevel">
+                                        <span>Edycje specjalne</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                                                <div class="submenu level1">
+                <ul class="level1">
+                                            <li class="" id="hcategory_90">
+                            <h3>
+                                <a href="/Mystery-box-mix-slodyczy" title="Boxy / Mixy słodyczy" id="headercategory90" class="spanhover">
+                                    <span>Boxy / Mixy słodyczy</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_115">
+                            <h3>
+                                <a href="/Ekstremalne-slodycze" title="Ekstremalne i ostre" id="headercategory115" class="spanhover">
+                                    <span>Ekstremalne i ostre</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_134">
+                            <h3>
+                                <a href="/Produkty-z-Tik-Toka" title="Produkty z Tik Toka" id="headercategory134" class="spanhover">
+                                    <span>Produkty z Tik Toka</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_92">
+                            <h3>
+                                <a href="/Edycje-limitowane" title="Edycje limitowane" id="headercategory92" class="spanhover">
+                                    <span>Edycje limitowane</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                            </li>
+                                                                                                <li class="parent" id="hcategory_17">
+                                <h3>
+                                    <a href="/Kraje" title="Kraje" id="headlink9" class="spanhover mainlevel">
+                                        <span>Kraje</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                                                <div class="submenu level1">
+                <ul class="level1">
+                                            <li class="parent" id="hcategory_21">
+                            <h3>
+                                <a href="/Amerykanskie-slodycze" title="Ameryka" id="headercategory21" class="spanhover">
+                                    <span>Ameryka</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                                                                        <div class="submenu level2">
+                <ul class="level2">
+                                            <li class="" id="hcategory_210">
+                            <h3>
+                                <a href="/Kraje/Brazylia" title="Brazylia" id="headercategory210" class="spanhover">
+                                    <span>Brazylia</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                    </li>
+                                            <li class="" id="hcategory_18">
+                            <h3>
+                                <a href="/Japonskie-slodycze" title="Japonia" id="headercategory18" class="spanhover">
+                                    <span>Japonia</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="parent" id="hcategory_19">
+                            <h3>
+                                <a href="/Azjatyckie-slodycze" title="Azja" id="headercategory19" class="spanhover">
+                                    <span>Azja</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                                                                        <div class="submenu level2">
+                <ul class="level2">
+                                            <li class="" id="hcategory_133">
+                            <h3>
+                                <a href="/Kraje/Chiny-slodycze-przekaski" title="Chiny" id="headercategory133" class="spanhover">
+                                    <span>Chiny</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_167">
+                            <h3>
+                                <a href="/Kraje/Korea-Poludniowa-slodycze-przekaski" title="Korea Południowa" id="headercategory167" class="spanhover">
+                                    <span>Korea Południowa</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_168">
+                            <h3>
+                                <a href="/Kraje/Tajlandia-slodycze-przekaski" title="Tajlandia" id="headercategory168" class="spanhover">
+                                    <span>Tajlandia</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_202">
+                            <h3>
+                                <a href="/Kraje/Tajwan-slodycze-przekaski" title="Tajwan" id="headercategory202" class="spanhover">
+                                    <span>Tajwan</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                    </li>
+                                            <li class="parent" id="hcategory_53">
+                            <h3>
+                                <a href="/Europejskie-slodycze" title="Europa" id="headercategory53" class="spanhover">
+                                    <span>Europa</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                                                                        <div class="submenu level2">
+                <ul class="level2">
+                                            <li class="" id="hcategory_131">
+                            <h3>
+                                <a href="/Kraje/Francja-chipsy-francuskie-slodycze-napoje" title="Francja" id="headercategory131" class="spanhover">
+                                    <span>Francja</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_139">
+                            <h3>
+                                <a href="/Niemieckie-slodycze" title="Niemcy" id="headercategory139" class="spanhover">
+                                    <span>Niemcy</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li class="" id="hcategory_132">
+                            <h3>
+                                <a href="/Kraje/Wlochy-slodycze-wloskie-przekaski-napoje" title="Włochy" id="headercategory132" class="spanhover">
+                                    <span>Włochy</span>
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+            </div>                                                    </li>
+                                    </ul>
+            </div>                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a href="/Mystery-box-mix-slodyczy" title="Mystery Boxy" id="headlink30" class="spanhover mainlevel">
+                                        <span>Mystery Boxy</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a href="/pl/new" title="Nowości" id="headlink2" class="spanhover mainlevel">
+                                        <span>Nowości</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a href="/pl/promotions" title="Promocje" id="headlink37" class="spanhover mainlevel">
+                                        <span>Promocje</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a href="/Sklepy-Partnerskie-stacjonarne-sklepy-Slodyczowo" title="Sklepy partnerskie" id="headlink40" class="spanhover mainlevel">
+                                        <span>Sklepy partnerskie</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                            </ul>
+            
+                            <ul class="menu-mobile rwd-show-medium rwd-hide-full">
+                    <li class="menu-mobile-li small-menu flex flex-4">
+                        <a href="/" title="Menu" class="fa fa-align-justify">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                    <li class="menu-mobile-li small-search flex flex-4" id="activ-search">
+                        <a title="Szukaj" class="fa fa-search">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                    <li class="menu-mobile-li small-panel flex flex-4" id="activ-panel">
+                        <a href="/pl/panel" title="Moje konto" class="fa fa-user">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                    <li class="menu-mobile-li small-cart flex flex-4">
+                        <a href="/pl/basket" title="Koszyk" class="icon icon-custom-cart" data-basket-count="0">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                </ul>
+                    </nav>
+    </div>
+        
+            <div class="breadcrumbs large tablet row">
+            <div class="innerbreadcrumbs row container">
+                <a href="/" title="Strona główna" rel="nofollow" class="breadcrumb-home left">
+                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                    <span>Jesteś w:</span>
+                </a>
+
+                <ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="path left inline">
+                    
+                                                                <li class="bred-1 " itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <a href="/" itemprop="item">                                <span class="raq">»</span>   
+                                <span itemprop="name">Strona główna</span>
+                            </a>
+                                                            <meta itemprop="position" content="1">
+                                                                                    </li>
+                                            <li class="bred-2 last">
+                                                            <span class="raq">»</span>   
+                                <span>Zaloguj się</span>
+                            
+                                                    </li>
+                                    </ul>
+            </div>
+        </div>
+    
+                    
+                        
+            <div class="top row">
+            <div class="container">
+                                    
+            </div>
+        </div>
+    
+    <div class="main row">
+        <div class="innermain container"><section marketingmachineindex="5"><!----></section><section marketingmachineindex="0"><!----></section>
+            <div class="s-row">
+                
+                <div class="centercol s-grid-12">
+                    
+
+                    <div class="box" id="box_login">
+                                                    <div class="social-login-buttons social-login-buttons_no-border">
+                                <h3>
+                                    Kontynuuj z
+                                </h3>
+
+                                                                                                            <a class="btn btn-login-facebook r--hspacing-xs" href="/pl/login/facebook">Zaloguj się przez Facebook</a>
+                                                                                                                                                <a class="btn btn-login-google r--hspacing-xs" href="/pl/login/google">Zaloguj się przez Google</a>
+                                                                                                </div>
+                        
+                        <div class="innerbox">
+                            <div class="f-row">
+                                <form action="/pl/login" method="post" class="f-grid-6 login-inner">
+                                    <fieldset class="">
+                                        <h3 class="login-head"><img src="/libraries/images/1px.gif" alt="" class="px1"><span>Zaloguj się</span></h3>
+                                        
+                                        <input type="hidden" name="last_url" value="https://slodyczowo.pl/">
+                                        <label for="mail_input_long">E-mail:</label>
+                                        <input type="text" name="mail" id="mail_input_long" size="30">
+                                        <label for="pass_input_long">Hasło:</label>
+                                        <input type="password" name="pass" id="pass_input_long" size="30">
+                                        <div class="g-recaptcha" data-sitekey="6Lfna0ElAAAAAJjKlDuwVlfn40KagxxkIBULALG9"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfna0ElAAAAAJjKlDuwVlfn40KagxxkIBULALG9&amp;co=aHR0cHM6Ly9zbG9keWN6b3dvLnBsOjQ0Mw..&amp;hl=pl&amp;v=sNQO7xVld1CuA2hfFHvkpVL-&amp;size=normal&amp;cb=g2k5s44fv1x8" width="304" height="78" role="presentation" name="a-rlegvxa48qu" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" cd_frame_id_="7cc4e2d0e37bf0dde84fbd1649cf8bbe"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                                        <button type="submit" class="btn btn-red login">
+                                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                            <span>Zaloguj się</span>
+                                        </button>
+                                        <p>Nie pamiętasz hasła? <a href="/pl/passremind">Kliknij tutaj</a>.</p>
+                                    </fieldset>
+                                </form>   
+
+                                                                    <div class="f-grid-6 register-inner">
+                                        <h3 class="register-head">
+                                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                            <span>Zarejestruj się</span>
+                                        </h3>
+
+                                        <p>Otrzymasz liczne dodatkowe korzyści:</p>
+
+                                        <ul class="register-addons">
+                                            <li>podgląd statusu realizacji zamówień </li>
+                                            <li>podgląd historii zakupów</li>
+                                            <li>brak konieczności wprowadzania swoich danych przy kolejnych zakupach</li>
+                                            <li>możliwość otrzymania rabatów i kuponów promocyjnych</li>
+                                        </ul> 
+
+                                        <form action="/pl/reg" method="get" class="register-form">
+                                            <fieldset>
+                                                
+                                                <button type="submit" class="btn register">
+                                                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                                    <span>Zarejestruj się</span>
+                                                </button>
+                                            </fieldset>
+                                        </form>                                           
+                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                            </div>
+        </div>
+    </div>
+<div class="bottom-footer row">
+	<div class="container">
+                            <div class="box resetcss box_custom" id="fx-why-company">
+                    
+                                            <div class="fx-why-company">
+<h1 class="fx-header">Dlaczego Słodyczowo?</h1>
+<div class="fx-items">
+<div class="first-item"><img alt="">
+<div class="fx-text">
+<h3>Duży wybór</h3>
+<p>edycji limitowanych z całego świata</p>
+</div>
+</div>
+<div class="second-item"><img alt="">
+<div class="fx-text">
+<h3>Darmowa dostawa</h3>
+<p>Na zakupy od 199 zł</p>
+</div>
+</div>
+<div class="third-item"><img alt="">
+<div class="fx-text">
+<h3>Wysyłka w 48h</h3>
+<p>Poniedziałek-Piątek</p>
+</div>
+</div>
+<div class="fourth-item"><img alt="">
+<div class="fx-text">
+<h3>Wysyłka z Polski</h3>
+<p>z Magazynu pod Warszawą</p>
+</div>
+</div>
+<div class="fifth-item"><img alt="">
+<div class="fx-text">
+<h3>Program lojalnościowy</h3>
+<p>Odbieraj produkty za zakupy</p>
+</div>
+</div>
+</div>
+</div>
+                    
+                    
+                    
+                                        </div>                    <div class="box" id="box_newsletter">
+                        <div class="boxhead">
+                            <span><img src="/libraries/images/1px.gif" alt="" class="px1">Newsletter</span>
+                        </div>
+                        <div class="innerbox">
+                            <h5 class="boxintro">Zapisz się aby na bieżąco otrzymywać informacje o nowościach i promocjach.</h5>                            <form action="https://slodyczowo.pl/pl/newsletter/sign" method="post">
+                                <fieldset>
+                                    
+                                    <input type="text" name="email" value="" placeholder="Wpisz adres e-mail" class="newsletter-input">
+                                    <button type="submit" class="btn btn-red">
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                        <span>Zapisz się</span>
+                                    </button>
+
+                                    
+                                </fieldset>
+
+                                <fieldset>
+                                    Podając swój adres wyrażasz zgodę na przetwarzanie swoich danych osobowych. Twoje dane będą przetwarzane zgodnie z naszą <a href="/pl/i/Polityka-prywatnosci/11">polityką prywatności</a>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+    </div>
+</div>    <footer class="footer row">
+        <div class="innerfooter container row">
+            <ul class="overall">
+                                    <li class="overall flex flex-5" id="footgroup4">
+                        <ul>
+                            <li class="head hidden">Płatności i dostawa</li>
+                                                                                                <li>
+                                        <a href="/pl/i/Formy-platnosci/10" title="Formy płatności" id="footlink10">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Formy płatności
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/i/Czas-realizacji-zamowienia-i-koszty-dostawy/4" title="Czas realizacji zamówienia i koszty dostawy" id="footlink4">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Czas realizacji zamówienia i koszty dostawy
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/i/Zwroty-i-reklamacje/7" title="Zwroty i reklamacje" id="footlink6">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Zwroty i reklamacje
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/i/FAQ/15" title="FAQ" id="footlink23">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                                    <li class="overall flex flex-5" id="footgroup2">
+                        <ul>
+                            <li class="head hidden">Informacje</li>
+                                                                                                <li>
+                                        <a href="/Sklepy-Partnerskie-stacjonarne-sklepy-Slodyczowo" title="Sklepy partnerskie" id="footlink35">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Sklepy partnerskie
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/i/Sklep-stacjonarny/13" title="Sklep stacjonarny" id="footlink25">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Sklep stacjonarny
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/Regulamin-sklepu-internetowego" title="Regulamin sklepu" id="footlink31">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Regulamin sklepu
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/Polityka-prywatnosci" title="Polityka Prywatności" id="footlink30">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Polityka Prywatności
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/Polityka-Cookies" title="Polityka Cookies" id="footlink29">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Polityka Cookies
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/Program-lojalnosciowy" title="Jak dostać gratisy?" id="footlink26">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Jak dostać gratisy?
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/Co-kupic-gotowe-pomysly-na-prezent" title="Co kupić?" id="footlink33">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Co kupić?
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                                    <li class="overall flex flex-5" id="footgroup7">
+                        <ul>
+                            <li class="head hidden">Social Media</li>
+                                                                                                <li>
+                                        <a href="//" title="Zobacz:" id="footlink28">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Zobacz:
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="https://www.facebook.com/slodyczowosklep/" target="_blank" rel="noopener" title="Facebook" id="footlink19">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Facebook
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="https://www.instagram.com/slodyczowo_sklep/" target="_blank" rel="noopener" title="Instagram" id="footlink18">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Instagram
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/n/list" title="Blog" id="footlink24">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Blog
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="https://www.tiktok.com/@slodyczowosklep" target="_blank" rel="noopener" title="Tik Tok" id="footlink27">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Tik Tok
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="https://www.youtube.com/@slodyczowosklep" target="_blank" rel="noopener" title="YouTube" id="footlink34">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            YouTube
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                                    <li class="overall flex flex-5" id="footgroup3">
+                        <ul>
+                            <li class="head hidden">Kontakt</li>
+                                                                                                <li>
+                                        <a href="/pl/i/Kim-jestesmy/8" title="Kim jesteśmy?" id="footlink8">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Kim jesteśmy?
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/Sklep-hurtowy-slodycze-przekaski-napoje-USA-Japonii-Azji" title="Hurt / B2B" id="footlink22">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Hurt / B2B
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="https://slodyczowo.pl/pl/i/O-firmie/8" title="+ 48 723 362 655" id="footlink21">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            + 48 723 362 655
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="https://slodyczowo.pl/pl/i/O-firmie/8" title="sklep@slodyczowo.pl" id="footlink20">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            sklep@slodyczowo.pl
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                                    <li class="overall flex flex-5" id="footgroup8">
+                        <ul>
+                            <li class="head hidden">img<img></li>
+                                                    </ul>
+                    </li>
+                            </ul>
+        </div>
+
+                    <div class="userfooter container">
+                <div class="row">
+                    <p>&nbsp;</p>
+<p>&nbsp;</p>
+                </div>
+            </div>
+            </footer>
+
+    <div class="up" style="bottom: 50px;">
+        <a href="#" title="do góry" class="btn fa fa-2x fa-angle-up">
+            <img src="/libraries/images/1px.gif" alt="" class="px1">
+            <span>do góry</span>
+        </a>
+    </div>
+</div><!-- and of wrap -->
+
+<div class="modal-overlay"></div><!-- overlay for modal lightbox-->    <script type="text/javascript">
+                    
+                window.customerPrivacy.onAnalyticsConsentGranted(function () {
+                
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                
+                ga('create', 'UA-170595924-1', 'auto', 'client');
+                                    ga('client.require', 'displayfeatures');
+                
+                
+                
+                    if (typeof gaEcommerce == 'function') { gaEcommerce() }
+                
+            
+                window.Shop = window.Shop || {};
+                Shop.values = Shop.values || {}; 
+                Shop.values.clientEE = 1;
+            
+            
+                }); 
+            
+            </script>
+
+    <div class="info-message info-message_hidden">
+        <strong class="info-message__text">Sklep jest w trybie podglądu</strong>
+    </div>
+    <div class="center">
+        <span id="turn-classic" class="btn rwd">
+    		Pokaż pełną wersję strony
+		</span>
+    </div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLFBJRH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="wce_popup-consolidator-trigger wce_none"><span></span></a><div class="wce_popup-consolidator" style="display: none; opacity: 0;"><a class="wce_popup-consolidator-close wce_none"><span>×</span></a> <div style="display: none;" id="wce_overlay-popup-wcePopup_5026" class="wce_overlay-popup wceapp_popup wceapp_wtype-3 wceapp_ctype-3 wceapp_popup-rbasket wceapp_popup-l-a" data-window-type="exit" data-content-type="image" data-ck="wcePopup_5026" data-locale="pl_PL" data-interval="0" data-delay="0" data-priority="1"> <aside class="wce_popup" style="width: 640px;"> <div class="wce_popup-head"> <a class="wce_popup-close"> <span>×</span> </a> </div> <div class="wce_popup-body"> <div class="wce_popup-body-proportion" style="padding-bottom: calc((480 / 640) * 100%);"></div> <a class="wce_popup-body-image" href="#" data-href="https://slodyczowo.pl/pl/basket?utm_source=Pop+Up+1&amp;utm_medium=Pop+Up+1&amp;utm_campaign=Pop+Up+1&amp;utm_id=Pop+Up+1"> <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" data-image-url="https://sklep094626.shoparena.pl/userdata/public/assets/Pop%20upy/pop-up-exit-koszyk.webp" alt="Już wychodzisz?"> </a> </div> </aside> </div>       </div>
+<!--
+ * edrone JavaScript Library.
+ * https://edrone.me/
+ *
+ * GPL licenses.
+ * https://edrone.me/integration-license/
+-->
+
+<script>
+window._edrone = window._edrone || {};
+_edrone.isInitialized = false;
+function edrone(){
+    if (!_edrone.isInitialized) {
+        _edrone.isInitialized = true;
+
+    window.customerPrivacy.onMarketingConsentGranted(function () {
+        (function (srcjs) {
+            _edrone.app_id = '63ff5f7d74bbe';
+            _edrone.version = '3.0.10';
+            _edrone.platform = 'shoper';
+
+            frontAPI.getBasketInfo(basketInfo => {
+                var basketCount = localStorage.getItem('edrone_basket_count') ? parseInt(localStorage.getItem('edrone_basket_count')) : 0;
+                var basketFlag = basketInfo.basket.count > basketCount;
+                var basketProduct = null;
+                if (basketFlag) {
+                    basketProduct = basketInfo.products.pop();
+                }
+                localStorage.setItem('edrone_basket_count', basketInfo.basket.count);
+
+                frontAPI.getUser(userdata => {
+
+
+                    if (!userdata.error_description) {
+                        _edrone.email = userdata.email;
+                        _edrone.first_name = userdata.firstname;
+                        _edrone.last_name = userdata.lastname;
+                    }
+
+                    if (basketFlag && basketProduct) {
+                        _edrone.product_ids = basketProduct.product_id;
+                        _edrone.product_titles = basketProduct.name;
+                        _edrone.product_images = window.location.origin + '/environment/cache/images/0_0_productGfx_' + basketProduct.image_filename;
+                    }
+
+                    _edrone.action_type = basketFlag ? 'add_to_cart' : 'other';
+
+                    frontAPI.getDefaults(function (defaults) {
+                        _edrone.platform_version = defaults.shop_version;
+                    })
+
+                    var category_id = document.querySelector('body').id.split('shop_category')[1];
+                    if (category_id) {
+                        _edrone.product_category_ids = category_id;
+                        frontAPI.getCategory((category) => {
+                            _edrone.product_category_ids = category ? category.category_id : null
+                            _edrone.product_category_names = category ? category.translation.name : null
+                        }, {id: category_id});
+                    }
+                    if (userdata.billing_address && !Boolean(userdata.error_description)) {
+                        _edrone.country = userdata.billing_address.country_code;
+                        _edrone.city = userdata.billing_address.city;
+                    }
+                });
+
+            })
+
+            var newsletterForm = document.querySelectorAll('form[action*="newsletter/sign"]');
+            if (newsletterForm.length !== 0) {
+                newsletterForm.forEach(function (form, index, array) {
+                    var emailInput = form.querySelector('input[name="email"]');
+                    if (emailInput) {
+                        form.addEventListener('submit', function () {
+                            _edrone.email = emailInput.value;
+                            _edrone.customer_tags = 'From PopUp';
+                            _edrone.action_type = 'subscribe';
+                            _edrone.init();
+                        })
+                    }
+                })
+            }
+
+            //ADD_TO_CART
+            function addToCartAction() {
+                setTimeout(function(){
+                    var frontstoreBasket = JSON.parse(localStorage.getItem('frontstoreBasket'));
+                    var products = JSON.parse(localStorage.getItem("frontstoreBasket")).products;
+                    var product = products[products.length - 1];
+                    var product_id = product.product_id;
+                    var main_image = frontAPI.getProducts({
+                        ids: [product_id]
+                    });
+                    localStorage.removeItem("productAddedToCart", '');
+                    localStorage.setItem('edrone_basket_count', frontstoreBasket.basket.count);
+
+                    _edrone.product_ids = product_id;
+                    _edrone.product_titles = encodeURIComponent(product.name);
+                    _edrone.product_images = window.location.origin + '/environment/cache/images/0_0_productGfx_' + main_image.list[0].main_image_filename;
+                    _edrone.product_urls = product.url;
+                    _edrone.product_category_ids = product.category.category_id;
+                    _edrone.product_category_names = product.category.translation.name;
+                    _edrone.product_brand_ids = product.producer !== undefined ? product.producer.producer_id : '';
+                    _edrone.product_brand_names = product.producer !== undefined ? product.producer.name : '';
+                    _edrone.action_type = 'add_to_cart';
+                    _edrone.init();
+                }, 2000); 
+            }
+
+            function addToCartAjax() {
+                shoper.addEvent('cart:add:ajax', function () {
+                    localStorage.setItem("productAddedToCart", "ajax");
+                    if (localStorage.getItem("productAddedToCart") === "ajax") {
+                        addToCartAction();
+                    }
+                });
+            } 
+
+            if (window.shoper) {
+                addToCartAjax();
+            } else {
+                window.addEventListener('skin:initialized', function() {
+                    addToCartAjax();
+                });
+            }
+
+            var addToBasketBtn = document.querySelectorAll('.addtobasket');
+            if(addToBasketBtn) {
+                for (var i = 0; i < addToBasketBtn.length; i++) {
+                    addToBasketBtn[i].addEventListener('click', function() {
+                        localStorage.setItem("productAddedToCart", "add");
+                    })
+                }
+            }
+
+            if (localStorage.getItem("productAddedToCart") === "add") {
+                addToCartAction();
+            }
+            //END ADD_TO_CART
+
+            var doc = document.createElement('script');
+            doc.type = 'text/javascript';
+            doc.async = true;
+            doc.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + srcjs;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(doc, s);
+            _edrone.isInitialized = true;
+        })("//d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js");
+
+        (function () {
+
+            function findProductIdOnProductPage() {
+                var regex = /(\/c\/)/g;
+                if (regex.exec(window.location.pathname) !== null) {
+                    return false;
+                } //check for category page
+                var body_id = document.querySelector('body').id;
+                var id_from_input = document.querySelector('[name^="product_id"]') ? document.querySelector('[name^="product_id"]').value : false;
+                if (~body_id.indexOf('shop_product')) {
+                    var id_from_body = body_id.split('shop_product')[1];
+                }
+                var product_id = (id_from_input || (!isNaN(id_from_body) ? id_from_body : false));
+                return product_id;
+            }
+
+            function edroneProductView() {
+                if (document.querySelectorAll("body")[0].id !== undefined) {
+                    var product_id = findProductIdOnProductPage();
+                    if (product_id) {
+                        window._edrone = window._edrone || {};
+                        window._edrone_send_handler = function () {
+                            _edrone.first_run = false;
+                            frontAPI.getProduct(function (product) {
+                                _edrone.product_ids = product_id;
+                                _edrone.product_titles = encodeURIComponent(product.name);
+                                _edrone.product_category_ids = product.category.id;
+                                _edrone.product_category_names = product.category.name;
+                                _edrone.product_images = window.location.origin + '/environment/cache/images/0_0_productGfx_' + product.main_image_filename;
+                                _edrone.product_urls = product.url;
+                                _edrone.product_brand_ids = product.producer !== undefined ? product.producer.id : '';
+                                _edrone.product_brand_names = product.producer !== undefined ? product.producer.name : '';
+                                _edrone.action_type = 'product_view';
+                                _edrone.init();
+                            }, {
+                                id: product_id
+                            });
+                        };
+                    }
+                }
+            }
+
+            findProductIdOnProductPage() ? edroneProductView() : window.addEventListener('load', edroneProductView);
+        }());
+    })
+}
+}
+
+if (window.frontAPI) {
+    edrone();
+} else {
+    document.addEventListener('frontAPIReady', () => {
+        edrone();
+    });
+}
+</script>
+<script type="text/javascript">
+            
+            window.Shop = window.Shop || {};
+            window.Shop.basket = window.Shop.basket || {};
+            window.Shop.values = window.Shop.values || {};
+        
+	    	    	    Shop.basket.basketProducts = '';
+		Shop.basket.categoryProducts = '';
+        Shop.values.currency = 'PLN';
+        Shop.values.decimalSep = ',';
+        Shop.values.thousandSep = '';
+        Shop.values.decimalPrecision = 2;
+        Shop.countryCode = 'PL';
+        Shop.pageType = 'shop_login';
+        Shop.pageId = ''.replace(/\D/g, '');
+        Shop.includeFacebookSDK = '';
+        Shop.displayCookieInfo = '1'
+        Shop.cookiesViewType = '2';
+	</script>
+
+<template id="consents-modal">
+    <div class="consents">
+        <div class="consents__wrapper">
+            <div class="consents__modal">
+                <div class="consents__basic-view js__basic-view">
+                    <div class="consents__content">
+                        <p class="consents__heading">
+                            Dbamy o Twoją prywatność
+                        </p>
+
+                        <p>Pliki cookies i pokrewne im technologie umożliwiają poprawne działanie strony i pomagają nam dostosować ofertę do Twoich potrzeb. Możesz zaakceptować wykorzystanie przez nas wszystkich tych plików i przejść do sklepu lub dostosować użycie plików do swoich preferencji, wybierając opcję "Dostosuj zgody".</p>
+
+                                                    <p>
+                                <a class="consents__link" href="/Polityka-prywatnosci">Więcej o plikach cookies przeczytasz w naszej Polityce prywatności.</a>
+                            </p>
+                                            </div>
+
+                    <div class="consents__buttons">
+                        <button type="button" class="btn btn-red js__accept-all-consents">Przejdź do sklepu</button>
+                        <button type="button" class="btn js__show-advanced-view">Dostosuj zgody</button>
+                    </div>
+                </div>
+
+                <div class="consents__advanced-view js__advanced-view none">
+                    <div class="consents__advanced-content">
+                        <p class="consents__heading">
+                            Ustawienia plików cookies
+                        </p>
+
+                        <p>W tym miejscu możesz określić swoje preferencje w zakresie wykorzystywania przez nas plików cookies.</p>
+                        <br>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="select_all" class="checkbox js__select-all-consents">
+                                    <label for="select_all"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="select_all"><strong>Zaznacz wszystko</strong></label>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox" checked="" disabled="">
+                                    <label for=""></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label><strong>Niezbędne do działania strony</strong></label>
+                                </p>
+
+                                <p>
+                                    </p><p>Te pliki są niezbędne do działania naszej strony internetowej, dlatego też nie możesz ich wyłączyć.</p>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="functionalConsent" name="functionalConsent" class="checkbox js__consent">
+                                    <label for="functionalConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="functionalConsent"><strong>Funkcjonalne</strong></label>
+                                </p>
+
+                                <p>
+                                    </p><p>Te pliki umożliwiają Ci korzystanie z pozostałych funkcji strony internetowej (innych niż niezbędne do jej działania). Ich włączenie da Ci dostęp do pełnej funkcjonalności strony.</p>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="analyticsConsent" name="analyticsConsent" class="checkbox js__consent">
+                                    <label for="analyticsConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="analyticsConsent"><strong>Analityczne</strong></label>
+                                </p>
+
+                                <p>
+                                    </p><p>Te pliki pozwalają nam na dokonanie analiz dotyczących naszego sklepu internetowego, co może przyczynić się do jego lepszego funkcjonowania i dostosowania do potrzeb Użytkowników.</p>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="platformAnalyticsConsent" name="platformAnalyticsConsent" class="checkbox js__consent">
+                                    <label for="platformAnalyticsConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="platformAnalyticsConsent"><strong>Analityczne dostawcy oprogramowania</strong></label>
+                                </p>
+
+                                <p>
+                                    Te pliki wykorzystywane są przez dostawcę oprogramowania, w ramach którego działa nasz sklep. Nie są one łączone z innymi danymi wprowadzanymi przez Ciebie w sklepie. Celem zbierania tych plików jest dokonywanie analiz, które przyczynią się do rozwoju oprogramowania. Więcej na ten temat przeczytasz w <a href="https://dcsaascdn.net/polityka-prywatnosci-shoper-sa" target="_blank" rel="noopener">Polityce plików cookies Shoper</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="marketingConsent" name="marketingConsent" class="checkbox js__consent">
+                                    <label for="marketingConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="marketingConsent"><strong>Marketing</strong></label>
+                                </p>
+
+                                <p>
+                                    </p><p>Dzięki tym plikom możemy prowadzić działania marketingowe.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consents__advanced-buttons">
+                        <button type="button" class="btn js__show-basic-view">Anuluj</button>
+                        <button type="button" class="btn btn-red js__save-consents">Zapisz ustawienia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="consents__mask"></div>
+    </div>
+</template>
+    <script id="config-analytics" type="application/json">
+        {
+            "clientGoogleAnalyticsV4": {
+                "isActive": "1",
+                "trackingId": "G-0ZFH7WRWCS",
+                "isGtm": "0"
+            },
+
+            "facebookBusinessExtension": {
+                "isActive": false,
+                "pixelId": ""
+            }
+        }
+    </script>
+
+
+
+
+
+<div id="shoper-foot"><p>© 2021 SŁODYCZOWO.PL</p>
+    <a href="https://www.shoper.pl/premium/" target="_blank" rel="noopener" title="Sklep internetowy Shoper Premium" class="popup">Sklep internetowy Shoper Premium</a>
+<img></div>
+<div id="ajaxbasket" class="none"></div><iframe id="_hjSafeContext_3771157" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><!----><div id="edrone--main--popup--container"><div><div><div style="width: 0px !important; height: 0px !important; display: none !important; position: absolute !important; left: -999999px !important;"><iframe frameborder="0" id="edrone-onsite-popup-iframe" style="width: 100%; height: 100%;"></iframe></div></div></div></div><div><div><div class="Vue-Toastification__container top-left"></div></div><div><div class="Vue-Toastification__container top-center"></div></div><div><div class="Vue-Toastification__container top-right"></div></div><div><div class="Vue-Toastification__container bottom-left"></div></div><div><div class="Vue-Toastification__container bottom-center"></div></div><div><div class="Vue-Toastification__container bottom-right"></div></div></div><input type="hidden" name="edrone_app_id" value="63ff5f7d74bbe"><input type="hidden" name="edrone_version" value="3.0.10"><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="Test reCAPTCHA wygaśnie za 2&nbsp;minuty" src="https://www.google.com/recaptcha/api2/bframe?hl=pl&amp;v=sNQO7xVld1CuA2hfFHvkpVL-&amp;k=6Lfna0ElAAAAAJjKlDuwVlfn40KagxxkIBULALG9" name="c-rlegvxa48qu" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><div class="mask" style=""></div><div class="modal modal-alert modal-visible" style="width: auto; position: fixed; top: 194.5px; left: 461.5px;"><div class="modal-header"><h3>Wiadomość ze sklepu</h3></div><div class="modal-body">Nie wypełniono pola reCAPTCHA</div><div class="modal-footer"><a class="btn btn-red">OK</a></div></div></body></html>
