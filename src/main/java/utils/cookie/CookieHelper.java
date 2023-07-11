@@ -4,21 +4,14 @@ import com.codeborne.selenide.WebDriverRunner;
 import lombok.SneakyThrows;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import page.objects.BasePage;
+import test.data.TestData;
 
-public class CookieHelper extends BasePage {
-
-    protected WebDriver driver;
-
-    public CookieHelper(WebDriver driver) {
-        this.driver = driver;
-    }
+public class CookieHelper {
 
     @SneakyThrows
-    public static void loadCookies() {
-        loadConfig();
+    public static void addCloseNewsletterCookie(TestData testData) {
         WebDriver driver = WebDriverRunner.getWebDriver();
-        Cookie welcomePopup = new Cookie(testDataReader.getCookie().getCookieName(), testDataReader.getAttribute().getCookieAttribute());
+        Cookie welcomePopup = new Cookie(testData.getCookie().getCookieName(), testData.getAttribute().getCookieAttribute());
         driver.manage().addCookie(welcomePopup);
         driver.navigate().refresh();
     }

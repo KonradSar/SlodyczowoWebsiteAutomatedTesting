@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import page.objects.*;
 import utils.cookie.CookieHelper;
 
-import java.io.IOException;
-
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
@@ -24,7 +22,6 @@ public class MainPageTests extends BaseTest {
     ProductDetails productDetails;
     RelatedProducts relatedProducts;
     BlogPage blogPage;
-    CookieHelper cookieHelper;
 
     @AfterEach
     public void quit() {
@@ -46,7 +43,9 @@ public class MainPageTests extends BaseTest {
         productDetails = new ProductDetails(driver);
         relatedProducts = new RelatedProducts(driver);
         blogPage = new BlogPage(driver);
-        cookieHelper = new CookieHelper(driver);
+        mainPage.openPage();
+        mainPage.acceptConsent();
+        CookieHelper.addCloseNewsletterCookie(testData);
     }
 
     @Test
@@ -56,13 +55,13 @@ public class MainPageTests extends BaseTest {
         header.goToShoppingCartView();
         mainPage.selectDeliveryWay();
         mainPage.selectPaymentMethod();
-        mainPage.fillInClientsInformationForm();
+        mainPage.fillInClientsInformationForm(testData);
 
         //When
         mainPage.acceptRegulations();
 
         //Then
-        assertTrue(mainPage.isPlaceAnOrderPageDisplayed());
+        assertTrue(mainPage.isPlaceAnOrderPageDisplayed(testData));
     }
 
     @Test
@@ -80,7 +79,7 @@ public class MainPageTests extends BaseTest {
         mainPage.selectListOfProductsFilterActive();
 
         //Then
-        assertTrue(mainPage.isFullListOfProductsDisplayed());
+        assertTrue(mainPage.isFullListOfProductsDisplayed(testData));
     }
 
     @Test
@@ -89,7 +88,7 @@ public class MainPageTests extends BaseTest {
         mainPage.goToSecondListOfBarsUsingPaginationBar();
 
         //Then
-        assertTrue(mainPage.isSecondListOfBarsDisplayed());
+        assertTrue(mainPage.isSecondListOfBarsDisplayed(testData));
     }
 
     @Test
@@ -98,7 +97,7 @@ public class MainPageTests extends BaseTest {
         mainPage.selectDescendingPriceFilterForJapanProducts();
 
         //Then
-        assertTrue(mainPage.isDescendingPriceFilterOn());
+        assertTrue(mainPage.isDescendingPriceFilterOn(testData));
     }
 
     @Test
@@ -107,7 +106,7 @@ public class MainPageTests extends BaseTest {
         mainPage.displayJapanProducts();
 
         //Then
-        assertTrue(mainPage.areJapanProductsDisplayed());
+        assertTrue(mainPage.areJapanProductsDisplayed(testData));
     }
 
     @Test
@@ -116,14 +115,11 @@ public class MainPageTests extends BaseTest {
         mainPage.displayTajlandProducts();
 
         //Then
-        assertTrue(mainPage.areTajlandProductsDisplayed());
+        assertTrue(mainPage.areTajlandProductsDisplayed(testData));
     }
 
     @Test
     public void scrollToWebPageTop() {
-        //Given
-        mainPage.setUpOperations();
-        cookieHelper.loadCookies();
 
         //When
         footer.moveToBlogIcon();
@@ -145,22 +141,18 @@ public class MainPageTests extends BaseTest {
 
     @Test
     public void logIntoAccount() {
-        //Given
-        mainPage.setUpOperations();
-        cookieHelper.loadCookies();
 
-        //When
+
+        // When
         header.goToLogingPage();
 
-        //Then
+        // Then
         logingPage.fillInCredentialsForm();
     }
 
     @Test
     public void openBubbleTeaRecipeBlog() {
-        //Given
-        mainPage.setUpOperations();
-        cookieHelper.loadCookies();
+
 
         //When
         footer.moveToBlogIcon();
@@ -172,15 +164,12 @@ public class MainPageTests extends BaseTest {
 
     @Test
     public void addToCart3DoritosSalsaDipAnd1RelatedProduct() {
-        //Given
-        mainPage.setUpOperations();
-        cookieHelper.loadCookies();
 
         //When
         mainPage.goToSalsaDipDetails();
         productDetails.addProductToCart();
         assertTrue(header.isCartCounterProper(3));
-        assertTrue(mainPage.isProductDetailsDisplayed());
+        assertTrue(mainPage.isProductDetailsDisplayed(testData));
         relatedProducts.addRelatedProductToCartAndContinueShopping();
 
         //Then

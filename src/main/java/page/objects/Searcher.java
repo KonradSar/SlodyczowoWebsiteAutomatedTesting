@@ -24,28 +24,13 @@ public class Searcher {
         this.driver = driver;
     }
 
-    public void loadCookies(WebDriver driver) {
-        Cookie welcomePopup = new Cookie("popup_v2_21301", "true");
-        driver.manage().addCookie(welcomePopup);
-        driver.navigate().refresh();
-    }
 
     public void searchFruitJellyFromDropDown() {
-        open("https://slodyczowo.pl/");
-        org.openqa.selenium.WebDriver driver = getWebDriver();
-        driver.manage().window().maximize();
-        $(By.className("js__accept-all-consents")).click();
-        loadCookies(driver);
         searchInput.setValue("żelki");
         fruityJelly.shouldBe(visible).click();
     }
 
     public void findResultsForPhrase(String lookForPhrase) {
-        open("https://slodyczowo.pl/");
-        org.openqa.selenium.WebDriver driver = getWebDriver();
-        driver.manage().window().maximize();
-        $(By.className("js__accept-all-consents")).click();
-        loadCookies(driver);
         searchInput.setValue(lookForPhrase);
         searchInput.pressEnter();
     }

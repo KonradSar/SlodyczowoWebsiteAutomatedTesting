@@ -12,6 +12,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import test.data.TestData;
 import utils.cookie.CookieHelper;
 
 import java.util.List;
@@ -93,9 +94,8 @@ public class MainPage extends BasePage {
     }
 
     @SneakyThrows
-    public boolean isDescendingPriceFilterOn() {
-        loadConfig();
-        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testDataReader.getJapanCandiesDescendingPriceResults().getJapansCandy4thSiteResults());
+    public boolean isDescendingPriceFilterOn(TestData testData) {
+        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testData.getJapanCandiesDescendingPriceResults().getJapansCandy4thSiteResults());
     }
 
     public MainPage(WebDriver driver) {
@@ -160,8 +160,6 @@ public class MainPage extends BasePage {
     }
 
     public void selectListOfProductsFilterActive() {
-        setUpOperations();
-        cookieHelper.loadCookies();
         actions().moveToElement(candysMenuItem).build().perform();
         actions().moveToElement(barsSubMenuCategory).click().build().perform();
         actions().moveToElement(displayListOfProductsIconSwitchedOff).click().build().perform();
@@ -169,17 +167,14 @@ public class MainPage extends BasePage {
     }
 
     @SneakyThrows
-    public boolean isFullListOfProductsDisplayed() {
-        loadConfig();
+    public boolean isFullListOfProductsDisplayed(TestData testData) {
         if (!displayListOfProductsIconSwitchedOn.is(visible)) {
             logger.error("The icon for displaying products as a list is not active");
         }
-        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testDataReader.getBarsResults1stSite().getBars1stSiteResultsUrl());
+        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testData.getBarsResults1stSite().getBars1stSiteResultsUrl());
     }
 
     public void displayJapanProducts() {
-        setUpOperations();
-        cookieHelper.loadCookies();
         actions().moveToElement(countrysMenuItem).build().perform();
         japanProductsLabel.click();
         assertEquals("JAPONIA", displayedProductsNameLabel.getText());
@@ -195,28 +190,22 @@ public class MainPage extends BasePage {
     }
 
     public void displayTajlandProducts() {
-        setUpOperations();
-        cookieHelper.loadCookies();
         actions().moveToElement(countrysMenuItem).build().perform();
         actions().moveToElement(asiaProductsLabel).build().perform();
         tajlandProductsLabel.click();
     }
 
     @SneakyThrows
-    public boolean areJapanProductsDisplayed() {
-        loadConfig();
-        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testDataReader.getJapanCandies().getJapansCandyCategoryUrl());
+    public boolean areJapanProductsDisplayed(TestData testData) {
+        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testData.getJapanCandies().getJapansCandyCategoryUrl());
     }
 
     @SneakyThrows
-    public boolean areTajlandProductsDisplayed() {
-        loadConfig();
-        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testDataReader.getTajlandCandies().getTajlandsCandyCategoryUrl());
+    public boolean areTajlandProductsDisplayed(TestData testData) {
+        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testData.getTajlandCandies().getTajlandsCandyCategoryUrl());
     }
 
     public void goToSecondListOfBarsUsingPaginationBar() {
-        setUpOperations();
-        cookieHelper.loadCookies();
         actions().moveToElement(candysMenuItem).build().perform();
         actions().moveToElement(barsSubMenuCategory).click().build().perform();
         actions().moveToElement(paginationElementsContainer).build().perform();
@@ -233,20 +222,21 @@ public class MainPage extends BasePage {
         goToThirdProductListIcon.click();
     }
 
-    public void setUpOperations() {
+    public void openPage() {
         open("https://slodyczowo.pl/");
-        org.openqa.selenium.WebDriver driver = getWebDriver();
-        driver.manage().window().maximize();
+        getWebDriver().manage().window().maximize();
+    }
+
+    public void acceptConsent() {
         $(By.className("js__accept-all-consents")).click();
     }
 
     @SneakyThrows
-    public boolean isSecondListOfBarsDisplayed() {
-        loadConfig();
+    public boolean isSecondListOfBarsDisplayed(TestData testData) {
         if (!goToSecondProductListIcon.is(visible)) {
             logger.error("'Icon: '+'Go to product's second resuts page'+'is not displayed'");
         }
-        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testDataReader.getBarsResults2ndSite().getBars2ndSiteResultsUrl());
+        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testData.getBarsResults2ndSite().getBars2ndSiteResultsUrl());
     }
 
     public void goToSalsaDipDetails() {
@@ -256,8 +246,8 @@ public class MainPage extends BasePage {
         productsDetailIncrementNumberOfProductsBtn.click();
     }
 
-    public boolean isProductDetailsDisplayed() {
-        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testDataReader.getSalsaDipDetails().getSalsaDipDetailsUrl());
+    public boolean isProductDetailsDisplayed(TestData testData) {
+        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testData.getSalsaDipDetails().getSalsaDipDetailsUrl());
     }
 
     public boolean isNoSearchResultsAlertDisplayed() {
@@ -274,15 +264,12 @@ public class MainPage extends BasePage {
     }
 
     @SneakyThrows
-    public boolean isPlaceAnOrderPageDisplayed() {
-        loadConfig();
-        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testDataReader.getBasket()
+    public boolean isPlaceAnOrderPageDisplayed(TestData testData) {
+        return WebDriverRunner.getWebDriver().getCurrentUrl().equals(testData.getBasket()
                 .getBasketSiteUrl());
     }
 
     public void addToCartKFlaminHot43g() {
-        setUpOperations();
-        cookieHelper.loadCookies();
         actions().moveToElement(saltySnacksMenuItem).build().perform();
         actions().moveToElement(crackersSubMenuCategory).click().build().perform();
         actions().moveToElement(productLabelinformationIcon).click().build().perform();
@@ -308,8 +295,6 @@ public class MainPage extends BasePage {
     }
 
     public void addTwoCocaColaToCart() {
-        setUpOperations();
-        cookieHelper.loadCookies();
         actions().moveToElement(drinksMenuItem).build().perform();
         actions().moveToElement(fizzyDrinksSubMenuCategory).click().build().perform();
         findElement("a[href='/Coca-Cola-Cherry-Vanilla-USA']");
@@ -323,15 +308,14 @@ public class MainPage extends BasePage {
     }
 
     @SneakyThrows
-    public void fillInClientsInformationForm() {
-        loadConfig();
-        telephoneInputText.setValue(testDataReader.getPhone().getUserContactNumber());
+    public void fillInClientsInformationForm(TestData testData) {
+        telephoneInputText.setValue(testData.getPhone().getUserContactNumber());
         actions().scrollToElement(telephoneInputText).moveToElement(telephoneInputText).click().build().perform();
-        $(By.cssSelector(EMAIL_INPUT)).setValue(testDataReader.getEmail().getUserEmailAddress());
-        $(By.cssSelector(NAME_INPUT)).setValue(testDataReader.getName().getUserName());
-        $(By.cssSelector(SURNAME_INPUT)).setValue(testDataReader.getSurname().getUserSurname());
-        $(By.cssSelector(STREET_NAME_INPUT)).setValue(testDataReader.getStreet().getStreetName());
-        $(By.cssSelector(POSTAL_CODE_INPUT)).setValue(testDataReader.getPostalCode().getPostaLCode());
-        $(By.cssSelector(CITY_NAME_INPUT)).setValue(testDataReader.getCity().getCityName());
+        $(By.cssSelector(EMAIL_INPUT)).setValue(testData.getEmail().getUserEmailAddress());
+        $(By.cssSelector(NAME_INPUT)).setValue(testData.getName().getUserName());
+        $(By.cssSelector(SURNAME_INPUT)).setValue(testData.getSurname().getUserSurname());
+        $(By.cssSelector(STREET_NAME_INPUT)).setValue(testData.getStreet().getStreetName());
+        $(By.cssSelector(POSTAL_CODE_INPUT)).setValue(testData.getPostalCode().getPostaLCode());
+        $(By.cssSelector(CITY_NAME_INPUT)).setValue(testData.getCity().getCityName());
     }
 }
