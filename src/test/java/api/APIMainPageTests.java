@@ -17,7 +17,7 @@ public class APIMainPageTests extends BaseAPITest {
     public void When_BaseURLIsLoaded_Expect_SlodyczowoMainPageIsDisplayed() {
         Response response = given()
                 .when()
-                .get(testDataReader.getMainPageSource().getBaseURL());
+                .get(testData.getMainPageSource().getBaseURL());
         System.out.println(response.prettyPrint());
         Assertions.assertEquals(200, response.getStatusCode());
         if(response.getStatusCode()==200){
@@ -29,7 +29,7 @@ public class APIMainPageTests extends BaseAPITest {
     public void When_YouClickOnJapanProducts_Expect_JapanProductsPAgeIsDisplayed() {
         Response response = given()
                 .when()
-                .get(testDataReader.getJapanCandies().getJapansCandyCategoryUrl());
+                .get(testData.getJapanCandies().getJapansCandyCategoryUrl());
         System.out.println(response.prettyPrint());
         Assertions.assertEquals(200, response.getStatusCode());
         if(response.getStatusCode()==200){
@@ -41,7 +41,7 @@ public class APIMainPageTests extends BaseAPITest {
     public void When_YouClickOnTajlandProducts_Expect_TajlandProductsPAgeIsDisplayed() {
         Response response = given()
                 .when()
-                .get(testDataReader.getTajlandCandies().getTajlandsCandyCategoryUrl());
+                .get(testData.getTajlandCandies().getTajlandsCandyCategoryUrl());
         System.out.println(response.prettyPrint());
         Assertions.assertEquals(200, response.getStatusCode());
         if(response.getStatusCode()==200){
@@ -53,7 +53,7 @@ public class APIMainPageTests extends BaseAPITest {
     public void When_YouClickOnDisplayBarsProductsAsAList_Expect_BarsAreDisplayedAsAList() {
         Response response = given()
                 .when()
-                .get(testDataReader.getBarsResults1stSite().getBars1stSiteResultsUrl());
+                .get(testData.getBarsResults1stSite().getBars1stSiteResultsUrl());
         System.out.println(response.prettyPrint());
         Assertions.assertEquals(200, response.getStatusCode());
         if(response.getStatusCode()==200){
@@ -65,7 +65,7 @@ public class APIMainPageTests extends BaseAPITest {
     public void When_YouClickOnDisplayJapanProductsAsDescendingPrice_Expect_JapanPrpductsAreDisplayedAsDescendingPrice() {
         Response response = given()
                 .when()
-                .get(testDataReader.getJapanCandiesDescendingPriceResults().getJapansCandy4thSiteResults());
+                .get(testData.getJapanCandiesDescendingPriceResults().getJapansCandy4thSiteResults());
         System.out.println(response.prettyPrint());
         Assertions.assertEquals(200, response.getStatusCode());
         if(response.getStatusCode()==200){
@@ -77,7 +77,7 @@ public class APIMainPageTests extends BaseAPITest {
     public void When_YouClickOnDisplaySecondPageOfBarProductsResults_Expect_SecondPageOfBarsResultsIsDisplayed() {
         Response response = given()
                 .when()
-                .get(testDataReader.getBarsResults2ndSite().getBars2ndSiteResultsUrl());
+                .get(testData.getBarsResults2ndSite().getBars2ndSiteResultsUrl());
         System.out.println(response.prettyPrint());
         Assertions.assertEquals(200, response.getStatusCode());
         if(response.getStatusCode()==200){

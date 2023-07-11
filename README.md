@@ -26,84 +26,11 @@ SŁODYCZOWO.PL website are covered by tests as below:
 </ul>
 </ol>
 
-# Requirements:
-
-It is required to add some dependencies to pom.xml file and install:
-</br> <ol><li>***Oracle OpenJDK version 18.0.2***</li><li>***IntelliJ IDEA 2022.2.1***</li></ol>
-
-```java
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<modelVersion>4.0.0</modelVersion>
-<groupId>org.example</groupId>
-<artifactId>shopTest</artifactId>
-<version>1.0-SNAPSHOT</version>
-<properties>
-<maven.compiler.source>18</maven.compiler.source>
-<maven.compiler.target>18</maven.compiler.target>
-<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
-<name>shopTest Maven Webapp</name>
-<url>http://maven.apache.org</url>
-<dependencies>
-<dependency>
-<groupId>com.codeborne</groupId>
-<artifactId>selenide</artifactId>
-<version>6.14.0</version>
-</dependency>
-<dependency>
-<groupId>org.apache.logging.log4j</groupId>
-<artifactId>log4j-api</artifactId>
-<version>2.6.1</version>
-</dependency>
-<dependency>
-<groupId>org.apache.logging.log4j</groupId>
-<artifactId>log4j-core</artifactId>
-<version>2.6.1</version>
-</dependency>
-<dependency>
-<groupId>junit</groupId>
-<artifactId>junit</artifactId>
-<version>4.12</version>
-<scope>test</scope>
-</dependency>
-<dependency>
-<groupId>org.projectlombok</groupId>
-<artifactId>lombok</artifactId>
-<version>1.18.24</version>
-<scope>compile</scope>
-</dependency>
-<dependency>
-<groupId>org.jetbrains</groupId>
-<artifactId>annotations</artifactId>
-<version>RELEASE</version>
-<scope>compile</scope>
-</dependency>
-<dependency>
-<groupId>org.junit.jupiter</groupId>
-<artifactId>junit-jupiter-api</artifactId>
-<version>5.9.2</version>
-</dependency>
-<dependency>
-<groupId>org.awaitility</groupId>
-<artifactId>awaitility</artifactId>
-<version>4.2.0</version>
-</dependency>
-<dependency>
-<groupId>io.rest-assured</groupId>
-<artifactId>rest-assured</artifactId>
-<version>4.5.1</version>
-</dependency>
-</dependencies>
-</project>
-
-```
-
+// TODO: dodać odnośniki do docs dla użytych bilbiotek
 # Some part's of the code below:
 
-#### Setting TEST_DATA_LOCATION:
+#### Loading test data:
+// TODO: podmienić śmierdziuszka nowym plikiem
 
 ```java
 public class BaseAPITest {
@@ -142,6 +69,7 @@ public void makeACocaColaOrderWithNoOrdering() {
         assertTrue(mainPage.isPlaceAnOrderPageDisplayed());
         }
 ```
+// TODO: sformatować kod, usunąć sysOutPrntln, zmień na "log.INFO"
 #### Some API tests:
 ```java
  @Test
@@ -158,6 +86,7 @@ public void When_YouClickOnJapanProducts_Expect_JapanProductsPAgeIsDisplayed() {
 ```
 
 # How to run some UI/API tests:
+// TODO: opisać uruchamianie testów z konsoli za pomocą maven'a
 
 #### It is required to follow the way described below:
 <ol>

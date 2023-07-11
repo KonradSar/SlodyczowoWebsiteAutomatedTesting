@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import page.objects.Header;
 import page.objects.MainPage;
 import page.objects.Searcher;
+import utils.cookie.CookieHelper;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -27,6 +28,9 @@ public class SearcherTests extends BaseTest {
         mainPage = new MainPage(driver);
         searcher = new Searcher(driver);
         header = new Header(driver);
+        mainPage.openPage();
+        mainPage.acceptConsent();
+        CookieHelper.addCloseNewsletterCookie(testData);
     }
 
     @Test
