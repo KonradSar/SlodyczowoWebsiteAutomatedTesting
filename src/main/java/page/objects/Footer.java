@@ -12,10 +12,6 @@ public class Footer {
 
     protected WebDriver driver;
 
-    public Footer(WebDriver driver) {
-        this.driver = driver;
-    }
-
     public void moveToBlogIcon() {
         actions().moveToElement(blogIcon).build().perform();
     }

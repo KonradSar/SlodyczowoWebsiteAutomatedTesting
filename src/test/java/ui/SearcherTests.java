@@ -25,9 +25,9 @@ public class SearcherTests extends BaseTest {
 
     @BeforeEach
     public void initializeObjects() {
-        mainPage = new MainPage(driver);
-        searcher = new Searcher(driver);
-        header = new Header(driver);
+        mainPage = new MainPage();
+        searcher = new Searcher();
+        header = new Header();
         mainPage.openPage();
         mainPage.acceptConsent();
         CookieHelper.addCloseNewsletterCookie(testData);

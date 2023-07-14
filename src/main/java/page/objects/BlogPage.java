@@ -17,10 +17,6 @@ public class BlogPage {
     SelenideElement bubbleTeaImage = $(By.cssSelector("img[src='/userdata/public/news/images/24.jpg']"));
     private static Logger logger = LogManager.getLogger(BlogPage.class);
 
-    public BlogPage(WebDriver driver) {
-        this.driver = driver;
-    }
-
     protected WebDriver driver;
 
     public void openBubbleTeaBlog() {
