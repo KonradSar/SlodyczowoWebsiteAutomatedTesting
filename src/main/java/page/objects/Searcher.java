@@ -4,12 +4,11 @@ import com.codeborne.selenide.SelenideElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.actions;
 
 public class Searcher {
 
@@ -19,11 +18,6 @@ public class Searcher {
     private static Logger logger = LogManager.getLogger(Searcher.class);
 
     protected WebDriver driver;
-
-    public Searcher(WebDriver driver) {
-        this.driver = driver;
-    }
-
 
     public void searchFruitJellyFromDropDown() {
         searchInput.setValue("żelki");

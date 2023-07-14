@@ -9,21 +9,22 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class APIMainPageTests extends BaseAPITest {
-    private static Logger logger = LogManager.getLogger(APIMainPageTests.class);
+public class APIPaginationPageTests extends BaseAPITest {
+
+    private static Logger logger = LogManager.getLogger(APIPaginationPageTests.class);
 
     @Test
-    public void When_BaseURLIsLoaded_Expect_SlodyczowoMainPageIsDisplayed() {
+    public void When_YouClickOnDisplaySecondPageOfBarProductsResults_Expect_SecondPageOfBarsResultsIsDisplayed() {
         // When
         Response response = given()
                 .when()
-                .get(testData.getMainPageSource().getBaseURL());
+                .get(testData.getBarsResults2ndSite().getBars2ndSiteResultsUrl());
         System.out.println(response.prettyPrint());
 
         // Then
         Assertions.assertEquals(200, response.getStatusCode());
         if (response.getStatusCode() == 200) {
-            logger.log(Level.INFO, "Main page is successfully displayed");
+            logger.log(Level.INFO, "Second page of bar's products is displayed properly");
         }
     }
 }

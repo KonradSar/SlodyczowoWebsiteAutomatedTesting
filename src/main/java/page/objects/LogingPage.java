@@ -17,10 +17,6 @@ public class LogingPage {
     SelenideElement pickUpPicturesDialogAgainstRobots = $(By.xpath(".//iframe[contains(@title, 'Test reCAPTCHA')]"));
     private static Logger logger = LogManager.getLogger(LogingPage.class);
 
-    public LogingPage(WebDriver driver) {
-        this.driver = driver;
-    }
-
     protected WebDriver driver;
 
     public void fillInCredentialsForm() {

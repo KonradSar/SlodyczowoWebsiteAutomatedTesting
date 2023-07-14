@@ -10,13 +10,9 @@ import static com.codeborne.selenide.Selenide.actions;
 
 public class RelatedProducts {
 
-    protected WebDriver driver;
-
-    public RelatedProducts(WebDriver driver) {
-        this.driver = driver;
-    }
-
     SelenideElement continueShoppingBtn = $(By.cssSelector(".modal-visible a.left"));
+
+    protected WebDriver driver;
 
     public void addRelatedProductToCartAndContinueShopping() {
         SelenideElement relatedProducts = $(By.cssSelector("div#box_productrelated"));

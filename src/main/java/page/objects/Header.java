@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import utils.count.CountHelper;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
@@ -13,13 +14,10 @@ public class Header {
     SelenideElement logInBtn = $(By.cssSelector("a[href='/pl/login'][title='Zaloguj się'][class='login']"));
     SelenideElement slodyczowoShopIcon = $(By.cssSelector("img[src='/skins/user/rwd_shoper_33/images/logo.svg']"));
     SelenideElement cartIcon = $(By.cssSelector("a[href='/pl/basket'][title='Koszyk'][class='count']"));
+    SelenideElement cartsCounterLabel = $(By.cssSelector(".countlabel .count>span"));
     SelenideElement spanValue = $(By.cssSelector(".countlabel .count>span"));
 
     protected WebDriver driver;
-
-    public Header(WebDriver driver) {
-        this.driver = driver;
-    }
 
     public void goToShoppingCartView() {
         actions().moveToElement(cartIcon).click().build().perform();
@@ -36,5 +34,8 @@ public class Header {
 
     public void clickOnShopMainIogo() {
         slodyczowoShopIcon.click();
+    }
+    public boolean isNumberOfProductsInCartUpdated(){
+        return CountHelper.cartCountComparison(cartsCounterLabel, 2);
     }
 }

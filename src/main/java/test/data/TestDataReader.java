@@ -12,7 +12,8 @@ public class TestDataReader {
     @SneakyThrows
     public static TestData loadTestData(){
         Properties properties = new Properties();
-        properties.load(new InputStreamReader(new FileInputStream(TEST_DATA_LOCATION), StandardCharsets.UTF_8));
+        properties.load(new InputStreamReader(new FileInputStream(TEST_DATA_LOCATION),
+                StandardCharsets.UTF_8));
         return new TestData(properties);
     }
 }
