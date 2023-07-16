@@ -30,14 +30,15 @@ public class TestData {
     private Credentials password;
 
 
-    public TestData (Properties properties){
-        this (new Cookie(properties), new Cookie(properties), new User(properties),
+    public TestData(Properties properties) {
+        this(new Cookie(properties), new Cookie(properties), new User(properties),
                 new User(properties), new User(properties), new User(properties), new Address(properties),
                 new Address(properties), new Address(properties), new Url(properties), new Url(properties),
                 new Url(properties), new Url(properties), new Url(properties), new Url(properties), new Url(properties),
                 new Url(properties), new Credentials(properties), new Credentials(properties));
 
     }
+
     public TestData(Cookie cookieName, Cookie cookieAttribute, User name, User surname,
                     User phone, User email, Address city, Address street, Address postalCode,
                     Url japanCandiesResults4thSite, Url barsResults2ndSite, Url barsResults1stSite,
@@ -130,10 +131,6 @@ public class TestData {
 
     public Url getMainPageSource() {
         return mainPageSource;
-    }
-
-    public Credentials geteMail() {
-        return eMail;
     }
 
     public Credentials getPassword() {

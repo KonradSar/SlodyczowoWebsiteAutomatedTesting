@@ -35,14 +35,20 @@ public class SearcherTests extends BaseTest {
 
     @Test
     public void displaySearchHistoryForSearcher() {
+        // When
         searcher.findResultsForPhrase(PROPER_SEARCH_INPUT_VALUE);
         header.clickOnShopMainIogo();
+
+        // Then
         assertTrue(searcher.checkIfHistoryIsDisplayed());
     }
 
     @Test
     public void checkWhenTheresNoSearchFound() {
+        // When
         searcher.findResultsForPhrase(WRONG_SEARCH_INPUT_VALUE);
+
+        // Then
         assertTrue(mainPage.isNoSearchResultsAlertDisplayed());
     }
 }

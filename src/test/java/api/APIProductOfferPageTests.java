@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class APIProductOfferPageTests extends BaseAPITest {
 
-    private static Logger logger = LogManager.getLogger(APINavigationPageTests.class);
+    private static Logger logger = LogManager.getLogger(APIProductOfferPageTests.class);
 
     @Test
     public void When_YouClickOnDisplayJapanProductsAsDescendingPrice_Expect_JapanPrpductsAreDisplayedAsDescendingPrice() {

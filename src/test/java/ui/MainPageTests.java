@@ -69,66 +69,65 @@ public class MainPageTests extends BaseTest {
 
     @Test
     public void addToCartCrackersUsingInformationModal() {
-        //When
+        // When
         cartPage.addKFlaminHot43gtoCart();
 
-        //Then
+        // Then
         assertTrue(cartPage.isAddingKFlamingHot43gAccomplished());
     }
 
     @Test
     public void displayProductsAsAList() {
-        //When
+        // When
         productOfferPage.selectListOfProductsFilterActive();
 
-        //Then
+        // Then
         assertTrue(productOfferPage.isFullListOfProductsDisplayed(testData));
     }
 
     @Test
     public void displaySecondSideOfSearchResults() {
-        //When
+        // When
         paginationPage.goToSecondListOfBarsUsingPaginationBar();
 
-        //Then
+        // Then
         assertTrue(productOfferPage.isSecondListOfBarsDisplayed(testData));
     }
 
     @Test
     public void displayDescendingPriceProducts() {
-        //When
+        // When
         productOfferPage.selectDescendingPriceFilterForJapanProducts();
 
-        //Then
+        // Then
         assertTrue(productOfferPage.isDescendingPriceFilterOn(testData));
     }
 
     @Test
     public void displayJapanProducts() {
-        //When
+        // When
         navigationPage.displayJapanProducts();
 
-        //Then
+        // Then
         assertTrue(navigationPage.areJapanProductsDisplayed(testData));
     }
 
     @Test
     public void displayTajlandProducts() {
-        //When
+        // When
         navigationPage.displayTajlandProducts();
 
-        //Then
+        // Then
         assertTrue(navigationPage.areTajlandProductsDisplayed(testData));
     }
 
     @Test
     public void scrollToWebPageTop() {
-
-        //When
+        // When
         footer.moveToBlogIcon();
         mainPage.clickOnArrowUpFab();
 
-        //Then
+        // Then
         assertTrue(mainPage.isArrowUpHidden());
     }
 
@@ -142,14 +141,14 @@ public class MainPageTests extends BaseTest {
         assertTrue(mainPage.isOkBtnForShopInformationModalVisible());
     }
 
-//    @Test
-//    public void logIntoAccount() {
-//        // When
-//        header.goToLogingPage();
-//
-//        // Then
-//        logingPage.fillInCredentialsForm();
-//    }
+    @Test
+    public void logIntoAccount() {
+        // When
+        header.goToLogingPage();
+
+        // Then
+        logingPage.fillInCredentialsForm();
+    }
 
     @Test
     public void openBubbleTeaRecipeBlog() {

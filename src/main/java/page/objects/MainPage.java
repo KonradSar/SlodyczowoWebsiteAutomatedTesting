@@ -16,7 +16,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class MainPage extends PaginationPage {
     SelenideElement goToSecondProductListIcon = $(By.cssSelector(".innerbox div.floatcenterwrap .last a"));
-    SelenideElement goToThirdProductListIcon = $(By.cssSelector(".innerbox div.floatcenterwrap li:nth-child(6) a"));
+    SelenideElement goToThirdProductListIcon = $(By.xpath(".//div[@class='floatcenterwrap']/ul//a[@href='/Slodycze/Zelki-owocowe/3']"));
     SelenideElement notFoundAnyElementsAlert = $(By.cssSelector("div.alert-info"));
     SelenideElement informMeAboutProductAvailabilityBtn = $(By.cssSelector(".availability-notifier-btn"));
     SelenideElement informMeAboutProductAvailabilityModal = $(By.cssSelector("div[class='modal modal-visible']"));

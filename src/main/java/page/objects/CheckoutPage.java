@@ -13,10 +13,10 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class CheckoutPage {
-    SelenideElement dhlRadioBtn = $(By.cssSelector(".el-radio-group .shipping_22 .el-radio__input"));
+    SelenideElement dhlRadioBtn = $(By.xpath(".//div[@class='el-radio-group flex-box']/label[contains(@class, 'shipping_22')]/span[1]"));
     SelenideElement selectYourBankBtn = $(By.cssSelector(".selectYourBank>button"));
     SelenideElement millenniumBankLabel = $(By.cssSelector("img[src='https://platnosci.bm.pl/pomoc/grafika/1807.png']"));
-    SelenideElement telephoneInputText = $(By.cssSelector(".one-step_address div:nth-child(3) input[name='Telefon']"));
+    SelenideElement telephoneInputText = $(By.xpath(".//div[contains(@class, 'one-step_address')]//input[@name='Telefon']"));
     private final static String EMAIL_INPUT = ".one-step_address div:nth-child(3) input[name='e-mail']";
     private final static String NAME_INPUT = ".one-step_address div:nth-child(3) input[name='Imię']";
     private final static String SURNAME_INPUT = ".one-step_address div:nth-child(3) input[name='Nazwisko']";
@@ -46,7 +46,7 @@ public class CheckoutPage {
     public void acceptRegulations() {
         for (int i = 1; i < 3; i++) {
             if (checkBoxes.get(i).isDisplayed() && checkBoxes.get(i).isEnabled()) {
-                ElementHelper.forceClickOnCheckboxElement(checkBoxes.get(i));
+                ElementHelper.forceClickOnElement(checkBoxes.get(i));
             }
         }
     }

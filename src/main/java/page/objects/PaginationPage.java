@@ -7,12 +7,12 @@ import utils.element.ElementHelper;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class PaginationPage extends NavigationPage{
+public class PaginationPage extends NavigationPage {
     SelenideElement candysMenuItem = $(By.cssSelector("a#headlink39"));
     SelenideElement barsSubMenuCategory = $(By.cssSelector("#hcategory_2 a"));
     SelenideElement paginationElementsContainer = $(By.cssSelector(".innerbox div.floatcenterwrap"));
     SelenideElement goToSecondProductListIcon = $(By.cssSelector(".innerbox div.floatcenterwrap .last a"));
-    SelenideElement goToThirdProductListIcon = $(By.cssSelector(".innerbox div.floatcenterwrap li:nth-child(6) a"));
+    SelenideElement goToThirdProductListIcon = $(By.xpath(".//div[@class='floatcenterwrap']/ul//a[@href='/Slodycze/Zelki-owocowe/3']"));
 
     public void goToSecondListOfBarsUsingPaginationBar() {
         ElementHelper.moveToElement(candysMenuItem);
