@@ -11,10 +11,6 @@ public class Credentials {
         password = properties.getProperty("credentials.password");
     }
 
-    public String geteMailAddress() {
-        return eMailAddress;
-    }
-
     public String getPassword() {
         return password;
     }

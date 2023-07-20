@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 
 public class Footer {
-    SelenideElement blogIcon = $(By.cssSelector("li[id='footgroup7'] li:nth-child(5)"));
+    SelenideElement blogIcon = $(By.xpath(".//li[@id='footgroup7']//a[@id='footlink24']"));
 
     protected WebDriver driver;
 

@@ -140,14 +140,10 @@ public class APIMainPageTests extends BaseAPITest {
 <li>Run some Test using Allure
 <ul>
 <li>Add Allure dependencies and plugins to pom.xml</li>
-<li>Add allure.properties file to resources</li>
-<li>Add a line "allure.results.directory=target/allure-results" within already created allure.properties file</li>
-<li>Add Scoop by <a href="https://scoop.sh">Scoop Docs</a> usnig PowerShel and adding to console: "iwr -useb get.scoop.sh | iex"</li>
-<li>Install Allure by adding to console: "scoop install allure"</li>
-<li>Create the path e.g. like "C:\Users\konrad\scoop\apps\allure\2.23.0\Java\POM\target\allure-report" by adding needed folders to finally create <strong>allure-reports</strong>> folder</li>
-<li>Open Intelijj Treminal and type in command: allure serve + "<em>URL to your tests reports</em>" which look like e.g. "allure generate allure-results --clean -o allure-report"</li>
-<li>Tap enter and wait until report is generated in target folder</li>
-<li>you can also use maven by selecting from right corner side menu option named <strong><em>"test"</em></strong></li>
+<li>Go to folder named "target" and there is allure-results folder e.g. "C:\Users\konrad\IdeaProjects\slodyczowoShopTestProject\target"</li>
+<li>Enter phrase "cmd" in target's folder path</li>
+<li>Inside cmd widnow type in "allure serve allure-results" and press Enter. The "allure-results" is name of folder where there are saved all tests results</li>
+<li>There is Allure raport displayed in the Web browser</li>
 </ul>
 </li>
 </ol>
