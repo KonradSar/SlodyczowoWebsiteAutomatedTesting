@@ -36,6 +36,7 @@ SŁODYCZOWO.PL website are covered by tests as below:
 <li>Log4J <a href="https://logging.apache.org/log4j/2.x/javadoc.html">Docs</a></li>
 <li>Allure <a href="https://docs.qameta.io/allure/">Docs</a></li>
 <li>Lombok <a href="http://anthonywhitford.com/lombok.maven/lombok-maven-plugin/plugin-info.html">Docs</a></li>
+<li>Maven <a href="https://maven.apache.org/guides/index.html">Docs</a></li>
 </ul>
 </ol>
 
@@ -137,12 +138,26 @@ public class APIMainPageTests extends BaseAPITest {
 </ol>
 <strong>When there is maven/Allure installed please follow the way described below:</strong>
 <ol>
-<li>Run some Test using Allure
+<li>Run some <strong>UI/API tests:</strong>
+<ul>
+<li>Open Terminal tab in Intellij</li>
+<li>Inside Terminal view type in "<STRONG>mvn</STRONG> -Dtest=TEST_CLASS_NAME#METHOD_NAME <strong>test</strong>" e.g. phrase for making an order from MainTest class: "mvn -Dtest=MainPageTests#makeACocaColaOrderWithNoConfirm test" and press Enter</li>
+<li>There are test result's displayed in Terminal</li>
+</ul>
+</li>
+<li>Run some Test results using <strong>cmd</strong>:
 <ul>
 <li>Add Allure dependencies and plugins to pom.xml</li>
 <li>Go to folder named "target" and there is allure-results folder e.g. "C:\Users\konrad\IdeaProjects\slodyczowoShopTestProject\target"</li>
 <li>Enter phrase "cmd" in target's folder path</li>
 <li>Inside cmd widnow type in "allure serve allure-results" and press Enter. The "allure-results" is name of folder where there are saved all tests results</li>
+<li>There is Allure raport displayed in the Web browser</li>
+</ul>
+</li>
+<li>Run some Test results using <strong>Intellij terminal</strong>:
+<ul>
+<li>Open Terminal tab in Intellij</li>
+<li>Inside Terminal view type in "allure serve target/allure-results" and press Enter</li>
 <li>There is Allure raport displayed in the Web browser</li>
 </ul>
 </li>
