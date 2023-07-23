@@ -119,46 +119,50 @@ public class APIMainPageTests extends BaseAPITest {
 # How to run some UI/API tests:
 
 
-#### When there is only Intelijj installed please follow the way described below:
+#### Run some API Tests:
+<ul>
+<li>Run all API Tests</strong>:</li>
+<ul>
+<blockquote>
+mvn test -Dtest=com.myrootpackage.myfirstlevelpackage.*
+</blockquote>
+</ul>
+<li>Run a single Test</strong>:
+</li>
+<ul>
+<blockquote>
+mvn -Dtest=TEST_CLASS_NAME#METHOD_NAME test
+</blockquote>
+</ul>
+</ul>
+
+#### Run some UI Tests:
+
+<ul>
+<li>Run all UI Tests</strong>:</li>
+<ul>
+<blockquote>
+mvn test -Dtest=com.myrootpackage.myfirstlevelpackage.*
+</blockquote>
+</ul>
+<li>Run a single Test</strong>:
+</li>
+<ul>
+<blockquote>
+mvn -Dtest=TEST_CLASS_NAME#METHOD_NAME test
+</blockquote>
+</ul>
+</ul>
+
+# Generating test results using Allure:
+
 <ol>
-<li>Run some <strong>API Tests</strong>:
-<ul>
-<li>open <em>java/api</em> package></li>
-<li>select <strong>APIMainPageTests</strong>> class</li>
-<li>click right on selected class and select "Run <em>class name</em>" </li>
-</ul>
-</li>
-<li>Run some <strong>UI Tests:</strong>
-<ul>
-<li>open <em>java/ui</em> package</li>
-<li>select <strong>MainPageTests</strong> or <strong>SearcherTests</strong></li>
-<li>click right on selected class and select "Run <em>class name</em>" </li>
-</ul>
-</li>
+<li>Install Allure <a href="https://docs.qameta.io/allure/">Docs</a></li>
+<li>Run tests</li>
+<li>When tests are finished, generate Allure reports</li>
+<blockquote>
+allure serve target/allure-results
+</blockquote>
+<li>Report should be generated and opened in browser like <a href="https://www.google.pl/imgres?imgurl=https%3A%2F%2Fwebdriver.io%2Fassets%2Fimages%2Fallure-bb6c9b036b07594235a5aca5aff5ac43.png&tbnid=ZrGEZmz03JdTtM&vet=12ahUKEwiql4ym2qWAAxUaEBAIHdcyCFMQMygBegUIARCzAQ..i&imgrefurl=https%3A%2F%2Fwebdriver.io%2Fdocs%2Fallure-reporter%2F&docid=ZjIU2QyMA4d84M&w=1920&h=1080&q=allure%20results%20in%20browser&ved=2ahUKEwiql4ym2qWAAxUaEBAIHdcyCFMQMygBegUIARCzAQ">Here</a></li>
 </ol>
-<strong>When there is maven/Allure installed please follow the way described below:</strong>
-<ol>
-<li>Run some <strong>UI/API tests:</strong>
-<ul>
-<li>Open Terminal tab in Intellij</li>
-<li>Inside Terminal view type in "<STRONG>mvn</STRONG> -Dtest=TEST_CLASS_NAME#METHOD_NAME <strong>test</strong>" e.g. phrase for making an order from MainTest class: "mvn -Dtest=MainPageTests#makeACocaColaOrderWithNoConfirm test" and press Enter</li>
-<li>There are test result's displayed in Terminal</li>
-</ul>
-</li>
-<li>Run some Test results using <strong>cmd</strong>:
-<ul>
-<li>Add Allure dependencies and plugins to pom.xml</li>
-<li>Go to folder named "target" and there is allure-results folder e.g. "C:\Users\konrad\IdeaProjects\slodyczowoShopTestProject\target"</li>
-<li>Enter phrase "cmd" in target's folder path</li>
-<li>Inside cmd widnow type in "allure serve allure-results" and press Enter. The "allure-results" is name of folder where there are saved all tests results</li>
-<li>There is Allure raport displayed in the Web browser</li>
-</ul>
-</li>
-<li>Run some Test results using <strong>Intellij terminal</strong>:
-<ul>
-<li>Open Terminal tab in Intellij</li>
-<li>Inside Terminal view type in "allure serve target/allure-results" and press Enter</li>
-<li>There is Allure raport displayed in the Web browser</li>
-</ul>
-</li>
-</ol>
+
